@@ -9,12 +9,19 @@ h1 {
   text-align: center;
 }
 
+button {
+  cursor: pointer;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+}
 .headshot {
   width: 480px;
   height: 480px;
   max-width: 100%;
   display: block;
   margin: 0 auto;
+  border-radius: 50%;
 }
 
 .blog-image {
