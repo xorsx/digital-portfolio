@@ -1,8 +1,9 @@
-header {
-  text-align: center;
+body {
   background-color: #fff8f1;
 }
-body {
+
+header {
+  text-align: center;
   background-color: #fff8f1;
 }
 h1 {
@@ -15,27 +16,42 @@ button {
   width: 150px;
   border-radius: 50%;
 }
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
 .headshot {
-  width: 480px;
-  height: 480px;
-  max-width: 100%;
-  display: block;
-  margin: 0 auto;
+  width: 400px;
+  height: 400px;
   border-radius: 50%;
+  filter: grayscale(1);
 }
 
-.blog-image {
-  display: block;
+.profile-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.name {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.about-me {
+  font-size: 1rem;
+}
+
+.buttons button {
+  padding: 0.5rem 1rem;
   margin: 0 auto;
-  border-radius: 100%;
-  max-width: 400px;
-}
-
-.blog-title {
-  display: block;
-  text-align: center;
-  overflow-wrap: break-word;
-  font-size: 20px;
-  line-height: 28px;
+  font: 1rem;
   cursor: pointer;
 }
