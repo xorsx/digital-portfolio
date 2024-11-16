@@ -3,15 +3,28 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
     <title>Olivia Swann | SEO and Digital Marketing</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
-      <a href="index.html">Olivia Swann</a> | SEO and Digital Marketing
-      <a href="portfolio.html">Portfolio</a> |
-      <a href="services.html">Services</a> |
-      <a href="contact.html">Contact</a>
+      <div class="header-title">
+        <a href="index.html">Olivia Swann</a> | SEO and Digital Marketing
+      </div>
+      <div class="header-navigation">
+        <a href="portfolio.html" class="header-portfolio">Portfolio</a>
+        <a href="services.html" class="header-services">Services</a>
+        <a href="contact.html" class="header-contact">Contact</a>
+      </div>
     </header>
     <div class="profile-container">
       <img src="src/olivia-swann.jpg" class="headshot" alt="olivia-swann" />
@@ -21,20 +34,30 @@
           <p>
             With comprehensive experience in SEO, copywriting, editing, content
             strategy, and social media management, I help businesses grow their
-            online presence and drive organic traffic. My skill set spans
-            keyword research, on-page optimization, and crafting compelling,
-            conversion-focused content that ranks well on search engines.
+            online presence and drive organic traffic.
+            <br />
+            <br />
+            My skill set spans keyword research, on-page optimization, and
+            crafting compelling, conversion-focused content that ranks well on
+            search engines.
+            <br />
+            <br />
             Whether managing digital campaigns or refining brand messaging, I
             focus on strategies that increase visibility and engagement across
             multiple platforms.
           </p>
         </div>
-        <div class="buttons">
-          <button>Portfolio</button>
-          <button>Services</button>
-          <button>Contact</button>
-        </div>
-      </div>
+        <span class="buttons">
+          <span>
+            <a href="portfolio.html" class="portfolio-button">Portfolio</a>
+          </span>
+          <span>
+            <a href="services.html" class="services-button">Services</a>
+          </span>
+          <span>
+            <a href="contact.html" class="contact-button">Contact</a>
+          </span>
+        </span>
     </div>
   </body>
 </html>
