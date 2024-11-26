@@ -69,8 +69,9 @@ h1 {
   gap: 0.5rem;
 }
 
-.about-me {
-  font-size: 1rem;
+p {
+  font-size: 16px;
+  line-height: 24px;
 }
 
 /* Buttons */
@@ -135,6 +136,9 @@ a {
   text-decoration: none;
   color: black;
 }
+
+/* navigation */
+
 /* Font Family */
 .roboto-thin {
   font-family: "Roboto", serif;
