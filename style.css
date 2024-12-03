@@ -15,7 +15,9 @@ h3 {
   margin: 0;
 }
 h1 {
-  font-size: 48px;
+  font-size: 96px;
+  border-bottom: 0.5px solid #5b4d43;
+  padding-bottom: 25px;
 }
 
 h2 {
@@ -30,6 +32,14 @@ h3 {
 p {
   font-size: 18px;
   line-height: 1.5;
+}
+
+.headshot {
+  display: block;
+  margin: 0 auto;
+  padding: 20px;
+  max-width: 75%;
+  filter: grayscale();
 }
 
 .navigation-links {
@@ -61,6 +71,15 @@ p {
   border: 1px solid var(--secondary-color);
   box-shadow: var(--box-shadow);
 }
+.tertiary-link {
+  border-radius: 4px;
+  padding: 20px 15px;
+  text-decoration: none;
+  text-transform: capitalize;
+  background: var(--secondary-color);
+  box-shadow: var(--box-shadow);
+  color: white;
+}
 
 p {
   margin: 30px 0;
@@ -82,4 +101,25 @@ p {
 .blog-links {
   display: flex;
   justify-content: space-evenly;
+}
+
+.table-of-contents {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+@media (max-width: 579px) {
+  h1 {
+    font-size: 24px;
+  }
+  h2 {
+    font-size: 14px;
+  }
+  p {
+    font-size: 12px;
+  }
+  .headshot {
+    padding: 20px;
+  }
 }
