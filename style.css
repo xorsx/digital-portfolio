@@ -13,6 +13,7 @@ h1,
 h2,
 h3 {
   margin: 0;
+  text-align: center;
 }
 h1 {
   font-size: 96px;
@@ -116,5 +117,10 @@ p {
   }
   .headshot {
     padding: 20px;
+  }
+
+  .primary-link {
+    display: flex; /* Use flex layout for inline links */
+    justify-content: center;
   }
 }
