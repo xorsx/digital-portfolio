@@ -16,12 +16,12 @@ h3 {
 }
 h1 {
   font-size: 96px;
-  border-bottom: 0.5px solid #5b4d43;
   padding-bottom: 25px;
 }
 
 h2 {
-  font-size: 24px;
+  font-size: 36px;
+  padding-bottom: 30px;
 }
 
 h3 {
@@ -30,16 +30,17 @@ h3 {
 }
 
 p {
-  font-size: 18px;
+  font-size: 24px;
   line-height: 1.5;
 }
 
 .headshot {
   display: block;
   margin: 0 auto;
-  padding: 20px;
+  padding: 15px 20px;
   max-width: 75%;
   filter: grayscale();
+  border-radius: 50%;
 }
 
 .navigation-links {
@@ -82,7 +83,7 @@ p {
 }
 
 p {
-  margin: 30px 0;
+  margin: 10px 0;
   padding: 10px;
 }
 
@@ -103,21 +104,15 @@ p {
   justify-content: space-evenly;
 }
 
-.table-of-contents {
-  display: flex;
-  justify-content: center;
-  padding-top: 20px;
-}
-
 @media (max-width: 579px) {
   h1 {
-    font-size: 24px;
+    font-size: 48px;
   }
   h2 {
-    font-size: 14px;
+    font-size: 24px;
   }
   p {
-    font-size: 12px;
+    font-size: 16px;
   }
   .headshot {
     padding: 20px;

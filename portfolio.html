@@ -3,7 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
+    <meta
+      name="description"
+      content="View Olivia Swann's copywriting porfolio inluding ad copy, social media copy, blog and website copy. Front-end development porfolio available too."
+    />
+
+    <title>Olivia Swann | Digital Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
@@ -50,13 +55,13 @@
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="services.html#contact">Contact</a>
-            </li>
-            <li class="nav-item">
               <a class="nav-link" href="portfolio.html">Porfolio</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="services.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="services.html#contact">Contact</a>
             </li>
           </ul>
         </div>
@@ -66,43 +71,11 @@
 
     <h1 class="mt-5 pt-5 text-center">Porfolio</h1>
     <!-- TOC -->
-
-    <table class="table table-of-contents">
-      <thead class="thead-dark">
-        <tr>
-          <th scope="col"></th>
-          <th scope="col"></th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <th scope="row">‣</th>
-          <td>
-            <a href="portfolio.html#front-end-projects"
-              >Front-End Development Projects</a
-            >
-          </td>
-        </tr>
-        <tr>
-          <th scope="row">‣</th>
-          <td>
-            <a href="portfolio.html#blogs"
-              >Copy for Websites, Blogs, and More</a
-            >
-          </td>
-        </tr>
-        <tr>
-          <th scope="row">‣</th>
-          <td>Paid Ad Campaign Copy</td>
-        </tr>
-      </tbody>
-    </table>
-
-    <table class="table">
-      <thead class="thead-light"></thead>
-
-      <tbody></tbody>
-    </table>
+    <div class="toc d-block text-center pb-5">
+      <a href="portfolio.html#blogs"
+        >Jump to ad copy, copywriting, social media copy, and blogs</a
+      >
+    </div>
 
     <h2 id="front end projects" class="text-center pb-3">Front End Projects</h2>
     <div class="container">
@@ -127,6 +100,7 @@
             <a
               href="https://quiet-toffee-e1eb9d.netlify.app/"
               class="primary-link"
+              title="haiku project"
             >
               Launch Poem Generator</a
             >
@@ -145,6 +119,7 @@
             <a
               href="https://coding-project-weather-app.netlify.app/"
               class="primary-link"
+              title="weather app project"
               >Launch Weather App</a
             >
           </div>
@@ -175,6 +150,7 @@
             <a
               href="https://ors-world-clock-proj.netlify.app/"
               class="primary-link"
+              title="clock project"
               >Launch Clock App</a
             >
           </div>
@@ -182,8 +158,12 @@
       </div>
     </div>
     <div class="navigation-links mb-5">
-      <a href="https://github.com/xorsx" class="primary-link">Github</a>
-      <a href="services.html" class="secondary-link">Services</a>
+      <a href="https://github.com/xorsx" class="primary-link" title="github"
+        >Github</a
+      >
+      <a href="services.html" class="secondary-link" title="services"
+        >Services</a
+      >
     </div>
     <!-- Copywriting and Blogs Porfolio -->
 
@@ -194,25 +174,34 @@
           <a
             href="https://leafwell.com/blog/indigenous-two-spirit-and-female-cannabis-leaders"
             class="tertiary-link"
+            title="indigenous leaders blog"
             ><img
               src="src/Two-spirit-and-Female-Indigenous-Leaders.webp"
               class="img-fluid p-2 shadow rounded"
+              alt="two spirit and female indigenous cannabis leaders"
           /></a>
         </div>
         <div class="col-sm-4 d-flex">
           <a
             href="https://leafwell.com/blog/celebrating-indigenous-peoples-day"
             class="tertiary-link"
+            title="indigenous peoples day blog"
             ><img
               src="src/Eeastern-Band-of-Cherokee-Flag.webp"
               class="img-fluid p-2 shadow rounded"
+              alt="celebrating indigenous peoples day EBOC flag"
           /></a>
         </div>
         <div class="col-sm-4 d-flex">
-          <a href="https://github.com/xorsx" class="tertiary-link">
+          <a
+            href="https://github.com/xorsx"
+            class="tertiary-link"
+            title="conference guide blog"
+          >
             <img
               src="src/Billy-Anthony.webp"
               class="img-fluid p-2 shadow rounded"
+              alt="billy anthony head of operations and partnerships at Leafwell"
           /></a>
         </div>
       </div>
