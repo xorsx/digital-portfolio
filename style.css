@@ -92,18 +92,19 @@ p {
   padding: 10%;
   background-color: rgb(234, 219, 204);
 }
+.skills-block {
+  display: block;
+  max-width: 100%;
+  padding-top: 20px;
+  margin: 0 auto;
+}
 
 p {
   margin: 10px 0;
   padding: 10px;
 }
 
-.blog-links {
-  display: flex;
-  justify-content: space-evenly;
-}
-
-@media (max-width: 576px) {
+@media (max-width: 900px) {
   h1 {
     font-size: 48px;
   }
@@ -121,5 +122,8 @@ p {
   .secondary-link,
   .primary-link {
     font-size: 16px;
+  }
+
+  .skills-block {
   }
 }
