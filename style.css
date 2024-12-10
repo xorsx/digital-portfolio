@@ -2,10 +2,10 @@
   --primary-color: #e0be9a;
   --secondary-color: #5b4d43;
   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  --font-family: "Poppins", sans-serif;
 }
 
 body {
-  margin-top: 100px;
   background-color: #fff8f1;
 }
 
@@ -13,16 +13,9 @@ h1,
 h2,
 h3 {
   margin: 0;
+  padding: 30px 20px;
   text-align: center;
-}
-h1 {
-  font-size: 96px;
-  padding-bottom: 25px;
-}
-
-h2 {
-  font-size: 64px;
-  padding: 30px 30px;
+  font-family: var(--font-family);
 }
 
 h3 {
@@ -35,15 +28,23 @@ p {
   line-height: 1.5;
 }
 
-.headshot {
-  display: flex;
-  align-items: center;
-  padding: 15px 20px;
-  max-width: 100%;
-  filter: grayscale();
-  border-radius: 50%;
+/* Hero */
+
+.hero {
+  padding: 160px 20px;
+  background-color: rgb(234, 219, 204);
 }
 
+.hero h1 {
+  font-size: 96px;
+}
+.hero h2 {
+  font-weight: normal;
+  line-height: 1.5;
+  font-size: 48px;
+  padding: 15px;
+}
+/* Buttons */
 .navigation-links {
   display: flex;
   margin-top: 40px;
@@ -58,7 +59,6 @@ p {
   border-radius: 4px;
   padding: 20px 15px;
   text-decoration: none;
-  text-transform: capitalize;
   background: var(--primary-color);
   border: 1px solid var(--primary-color);
   box-shadow: var(--box-shadow);
@@ -70,7 +70,7 @@ p {
   border-radius: 4px;
   padding: 20px 15px;
   text-decoration: none;
-  text-transform: capitalize;
+
   color: var(--secondary-color);
   border: 1px solid var(--secondary-color);
   box-shadow: var(--box-shadow);
@@ -80,7 +80,6 @@ p {
   border-radius: 4px;
   padding: 20px 20px;
   text-decoration: none;
-  text-transform: capitalize;
   background: var(--secondary-color);
   border: 1px solid var(--tertiary-color);
   box-shadow: var(--box-shadow);
@@ -88,23 +87,35 @@ p {
   font-size: 24px;
 }
 
-.hero {
-  padding: 10%;
-  background-color: rgb(234, 219, 204);
+/* About Page */
+
+.about-section {
+  padding: 160px 20px;
 }
-.skills-block {
-  display: block;
-  max-width: 100%;
-  padding-top: 20px;
-  margin: 0 auto;
+.about-section-content {
+  margin: 30px;
+}
+.about-section h1 {
+  font-size: 64px;
 }
 
-p {
-  margin: 10px 0;
-  padding: 10px;
+.about-section h2 {
+  font-size: 24px;
 }
 
-@media (max-width: 900px) {
+.about-section p {
+  font-size: 18px;
+}
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Media queries */
+
+@media (max-width: 800px) {
   h1 {
     font-size: 48px;
   }
@@ -118,12 +129,25 @@ p {
     font-size: 16px;
   }
 
+  .hero {
+    padding: 80px 20px;
+  }
+
+  .hero h1 {
+    font-size: 48px;
+  }
+
+  .hero h2 {
+    font-size: 36px;
+  }
+  .about-section {
+    padding: 0px;
+    margin: 0px;
+  }
+
   .tertiary-link,
   .secondary-link,
   .primary-link {
     font-size: 16px;
-  }
-
-  .skills-block {
   }
 }
