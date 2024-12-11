@@ -111,6 +111,14 @@ h3 {
   opacity: 0.7;
 }
 
+.bg-custom {
+  background-color: #e0be9a;
+}
+
+.bg-custom-light {
+  background-color: #eadbcc;
+}
+
 .poppins-regular {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
