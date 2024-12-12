@@ -32,6 +32,10 @@ h3 {
   color: var(--secondary-color);
 } */
 
+footer {
+  padding-top: 50px;
+}
+
 footer .social-links a {
   margin: 0 20px;
   padding: 10px 14px;
