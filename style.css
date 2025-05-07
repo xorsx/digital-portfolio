@@ -158,6 +158,14 @@ footer .contact-box p {
   opacity: 0.7;
 }
 
+.content a {
+  color: var(--secondary-color);
+}
+
+.content a:hover {
+  color: #fff8f1;
+}
+
 /* Custom colors */
 
 .bg-custom {
