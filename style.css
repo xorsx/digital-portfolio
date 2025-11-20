@@ -19,6 +19,13 @@ h3 {
   text-align: center;
   font-family: var(--font-family);
 }
+p {
+  text-align: center;
+}
+.carousel {
+  margin: 0 auto;
+  width: 1200px;
+}
 
 /* footer .email-link {
   text-decoration: none;
