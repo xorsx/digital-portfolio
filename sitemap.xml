@@ -1,32 +1,43 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
-
-
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!--  created with Free Online Sitemap Generator www.xml-sitemaps.com  -->
 <url>
-  <loc>https://oliviarswann.com/</loc>
-  <lastmod>2024-12-14T19:50:28+00:00</lastmod>
-  <priority>1.00</priority>
+<loc>https://oliviarswann.com/</loc>
+<lastmod>2025-11-26T15:10:15+00:00</lastmod>
+<priority>1.00</priority>
 </url>
 <url>
-  <loc>https://oliviarswann.com/about</loc>
-  <lastmod>2024-12-14T19:50:28+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://oliviarswann.com/about</loc>
+<lastmod>2025-11-26T15:10:15+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://oliviarswann.com/portfolio</loc>
-  <lastmod>2024-12-14T19:50:28+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://oliviarswann.com/services</loc>
+<lastmod>2025-11-26T15:10:15+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://oliviarswann.com/services</loc>
-  <lastmod>2024-12-14T19:50:28+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://oliviarswann.com/portfolio</loc>
+<lastmod>2025-11-26T15:10:15+00:00</lastmod>
+<priority>0.80</priority>
 </url>
-
-
+<url>
+<loc>https://oliviarswann.com/writing</loc>
+<lastmod>2025-11-26T15:10:15+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://oliviarswann.com/social-media</loc>
+<lastmod>2025-11-26T15:10:15+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://oliviarswann.com/frontend-development</loc>
+<lastmod>2025-11-26T15:10:15+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://oliviarswann.com/src/Olivia%20Swann%20SEO%20and%20Digital%20Marketing%20Specialist.doc.pdf</loc>
+<lastmod>2025-11-26T15:10:15+00:00</lastmod>
+<priority>0.64</priority>
+</url>
 </urlset>
