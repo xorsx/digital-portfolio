@@ -1,0 +1,937 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-M4MW4SM3Q3"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-M4MW4SM3Q3");
+    </script>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Case Study: Utica Creative Reuse — 235% Click Growth | Olivia Swann
+    </title>
+    <meta
+      name="description"
+      content="Technical SEO case study: how a full site audit, crawl error fixes, indexing, and on-page optimization drove 235% more clicks and a position improvement from 25.3 to 7.7 for a Central New York non-profit."
+    />
+    <link
+      rel="canonical"
+      href="https://oliviaswann.com/case-study-utica.html"
+    />
+    <meta
+      property="og:title"
+      content="Case Study: Utica Creative Reuse — 235% Click Growth in 5 Months"
+    />
+    <meta
+      property="og:description"
+      content="From invisible to page one. A ground-up technical SEO overhaul with real GSC data."
+    />
+    <meta property="og:type" content="article" />
+    <meta
+      property="og:url"
+      content="https://oliviaswann.com/case-study-utica.html"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Case Study: Utica Creative Reuse — 235% Click Growth via Technical SEO Overhaul",
+        "author": {
+          "@type": "Person",
+          "name": "Olivia Swann",
+          "url": "https://oliviaswann.com"
+        },
+        "datePublished": "2026-05-14",
+        "description": "Technical SEO case study covering crawl error fixes, indexing, on-site optimization, and GA4/GSC setup for a Central New York 501(c)3.",
+        "breadcrumb": {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Work",
+              "item": "https://oliviaswann.com/work.html"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Utica Creative Reuse Case Study"
+            }
+          ]
+        }
+      }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=DM+Sans:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <style>
+      /* ── Case study specific styles ── */
+      .cs-header {
+        background: var(--ink);
+        padding: 140px var(--px) 100px;
+        position: relative;
+        overflow: hidden;
+      }
+      .cs-header::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: radial-gradient(
+          ellipse 60% 80% at 80% 40%,
+          rgba(200, 169, 126, 0.12) 0%,
+          transparent 70%
+        );
+        pointer-events: none;
+      }
+      .cs-header__inner {
+        position: relative;
+        z-index: 1;
+        max-width: var(--max-w);
+        margin: 0 auto;
+      }
+      .cs-header__meta {
+        display: flex;
+        gap: 8px;
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+      }
+      .cs-header h1 {
+        color: var(--white);
+        font-size: clamp(36px, 5vw, 64px);
+        margin-bottom: 20px;
+      }
+      .cs-header__outcome {
+        font-size: 18px;
+        color: var(--sand);
+        font-weight: 500;
+        margin-bottom: 0;
+      }
+
+      /* Results strip */
+      .cs-results {
+        background: var(--white);
+        border-bottom: 1px solid var(--border);
+      }
+      .cs-results__inner {
+        max-width: var(--max-w);
+        margin: 0 auto;
+        padding: 0 var(--px);
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+      }
+      .cs-result {
+        padding: 40px 24px;
+        border-right: 1px solid var(--border);
+        text-align: center;
+      }
+      .cs-result:last-child {
+        border-right: none;
+      }
+      .cs-result__number {
+        font-family: var(--ff-display);
+        font-size: clamp(32px, 4vw, 52px);
+        font-weight: 600;
+        color: var(--ink);
+        line-height: 1;
+        margin-bottom: 6px;
+      }
+      .cs-result__number.positive {
+        color: #16a34a;
+      }
+      .cs-result__label {
+        font-size: 13px;
+        color: var(--muted);
+        font-weight: 500;
+        margin-bottom: 4px;
+      }
+      .cs-result__context {
+        font-size: 11px;
+        color: var(--border);
+        /* actually make it slightly visible */
+        color: #c4b5a8;
+      }
+
+      /* Body layout */
+      .cs-body {
+        max-width: 740px;
+        margin: 0 auto;
+        padding: 80px var(--px);
+      }
+      .cs-body h2 {
+        font-size: clamp(22px, 3vw, 32px);
+        margin: 60px 0 16px;
+      }
+      .cs-body h2:first-child {
+        margin-top: 0;
+      }
+      .cs-body p {
+        font-size: 17px;
+        line-height: 1.8;
+        color: var(--bark);
+        margin-bottom: 18px;
+      }
+      .cs-body ul {
+        margin: 0 0 20px 0;
+        padding: 0;
+      }
+      .cs-body ul li {
+        font-size: 16px;
+        color: var(--bark);
+        padding: 8px 0 8px 20px;
+        border-bottom: 1px solid var(--border);
+        position: relative;
+        line-height: 1.6;
+      }
+      .cs-body ul li::before {
+        content: "—";
+        position: absolute;
+        left: 0;
+        color: var(--sand);
+        font-size: 12px;
+        top: 11px;
+      }
+      .cs-body ul li:last-child {
+        border-bottom: none;
+      }
+
+      .cs-label {
+        display: inline-block;
+        font-family: var(--ff-body);
+        font-size: 11px;
+        font-weight: 700;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        color: var(--sand);
+        margin-bottom: 8px;
+      }
+
+      /* Chart container */
+      .chart-wrapper {
+        background: var(--white);
+        border: 1px solid var(--border);
+        border-radius: 12px;
+        padding: 32px;
+        margin: 40px 0;
+      }
+      .chart-wrapper__title {
+        font-family: var(--ff-body);
+        font-size: 13px;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: var(--muted);
+        margin-bottom: 24px;
+      }
+      .chart-legend {
+        display: flex;
+        gap: 24px;
+        margin-bottom: 20px;
+        flex-wrap: wrap;
+      }
+      .chart-legend__item {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        font-size: 13px;
+        color: var(--bark);
+      }
+      .chart-legend__dot {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        flex-shrink: 0;
+      }
+
+      /* Before/after table */
+      .comparison-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 28px 0;
+        font-size: 15px;
+      }
+      .comparison-table th {
+        font-family: var(--ff-body);
+        font-size: 11px;
+        font-weight: 700;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: var(--muted);
+        text-align: left;
+        padding: 12px 16px;
+        border-bottom: 2px solid var(--border);
+      }
+      .comparison-table td {
+        padding: 14px 16px;
+        border-bottom: 1px solid var(--border);
+        color: var(--bark);
+        vertical-align: top;
+      }
+      .comparison-table tr:last-child td {
+        border-bottom: none;
+      }
+      .comparison-table td:first-child {
+        font-weight: 600;
+        color: var(--ink);
+      }
+      .val-before {
+        color: #991b1b;
+      }
+      .val-after {
+        color: #16a34a;
+        font-weight: 700;
+      }
+
+      /* Callout box */
+      .cs-callout {
+        background: var(--linen);
+        border-left: 3px solid var(--sand);
+        border-radius: 0 8px 8px 0;
+        padding: 20px 24px;
+        margin: 32px 0;
+        font-size: 16px;
+        color: var(--bark);
+        font-style: italic;
+        line-height: 1.7;
+      }
+
+      /* Navigation between case studies */
+      .cs-nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 40px var(--px);
+        max-width: var(--max-w);
+        margin: 0 auto;
+        border-top: 1px solid var(--border);
+      }
+      .cs-nav a {
+        font-size: 14px;
+        font-weight: 500;
+        color: var(--muted);
+        transition: color var(--transition);
+      }
+      .cs-nav a:hover {
+        color: var(--sand);
+      }
+
+      @media (max-width: 768px) {
+        .cs-results__inner {
+          grid-template-columns: repeat(2, 1fr);
+        }
+        .cs-result {
+          border-right: none;
+          border-bottom: 1px solid var(--border);
+        }
+        .cs-result:nth-child(2n) {
+          border-left: 1px solid var(--border);
+        }
+        .cs-result:last-child,
+        .cs-result:nth-last-child(2):nth-child(odd) {
+          border-bottom: none;
+        }
+        .cs-body {
+          padding: 48px var(--px);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="nav" aria-label="Main navigation">
+      <a class="nav__brand" href="index.html">Olivia Swann</a>
+      <ul class="nav__links" role="list">
+        <li><a href="work.html">Work</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" class="btn btn-primary">Let's Talk</a></li>
+      </ul>
+      <button
+        class="nav__toggle"
+        aria-label="Open navigation"
+        aria-expanded="false"
+      >
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+    <div class="nav__drawer" role="dialog" aria-label="Navigation menu">
+      <button class="close-btn" aria-label="Close navigation">✕</button>
+      <a href="work.html">Work</a>
+      <a href="services.html">Services</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Let's Talk</a>
+    </div>
+
+    <!-- Header -->
+    <header class="cs-header">
+      <div class="cs-header__inner">
+        <div class="cs-header__meta">
+          <a
+            href="work.html"
+            style="
+              font-size: 13px;
+              color: rgba(255, 255, 255, 0.4);
+              display: flex;
+              align-items: center;
+              gap: 6px;
+            "
+            >← Work</a
+          >
+        </div>
+        <div
+          style="display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 20px"
+        >
+          <span
+            class="tag"
+            style="background: rgba(200, 169, 126, 0.15); color: var(--sand)"
+            >Technical SEO</span
+          >
+          <span
+            class="tag"
+            style="background: rgba(200, 169, 126, 0.15); color: var(--sand)"
+            >Indexing</span
+          >
+          <span
+            class="tag"
+            style="background: rgba(200, 169, 126, 0.15); color: var(--sand)"
+            >On-Site Optimization</span
+          >
+          <span
+            class="tag"
+            style="background: rgba(200, 169, 126, 0.15); color: var(--sand)"
+            >GSC & GA4 Setup</span
+          >
+          <span
+            class="tag"
+            style="background: rgba(200, 169, 126, 0.15); color: var(--sand)"
+            >Non-Profit</span
+          >
+        </div>
+        <h1>Utica Creative Reuse Center</h1>
+        <p class="cs-header__outcome">
+          A ground-up technical SEO overhaul with 5-month year-over-year GSC
+          data.
+        </p>
+      </div>
+    </header>
+
+    <!-- Results Strip -->
+    <div class="cs-results">
+      <div class="cs-results__inner">
+        <div class="cs-result">
+          <div class="cs-result__number positive">+235%</div>
+          <div class="cs-result__label">Total Clicks</div>
+          <div class="cs-result__context">675 to 2,260 (YoY)</div>
+        </div>
+        <div class="cs-result">
+          <div class="cs-result__number positive">+456%</div>
+          <div class="cs-result__label">Total Impressions</div>
+          <div class="cs-result__context">18,700 to 104,000 (YoY)</div>
+        </div>
+        <div class="cs-result">
+          <div class="cs-result__number positive">7.7</div>
+          <div class="cs-result__label">Avg. Position</div>
+          <div class="cs-result__context">
+            Down from 25.3. Page 3 to top of page 1.
+          </div>
+        </div>
+        <div class="cs-result">
+          <div class="cs-result__number">5 mo.</div>
+          <div class="cs-result__label">Measurement Window</div>
+          <div class="cs-result__context">Jan 14 – May 14, YoY comparison</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Body -->
+    <article class="cs-body">
+      <span class="cs-label">01 — The Challenge</span>
+      <h2>A site Google couldn't find.</h2>
+      <p>
+        Utica Creative Reuse Center is a 501(c)3 non-profit arts and crafts
+        thrift store in Central New York. They launched in September 2024 as a
+        farmers market popup before opening their first brick-and-mortar
+        location in June 2025. A genuinely valuable community resource with
+        essentially no organic search presence.
+      </p>
+      <p>
+        When I came in, the site had crawl errors throughout, pages that weren't
+        indexing, no Google Search Console property, no GA4 tracking, and no
+        on-page optimization in place. There was no baseline to work from
+        because there was no measurement at all.
+      </p>
+      <p>
+        The goal was simple: fix what was broken, get the site indexed, optimize
+        what was there, and build the reporting infrastructure to measure what
+        happened next.
+      </p>
+
+      <span class="cs-label">02 — My Approach</span>
+      <h2>Audit first. Fix what matters most.</h2>
+      <p>
+        I started with a full crawl audit to understand the scope of technical
+        issues. Which errors were blocking indexing, which were cosmetic, and
+        which were creating crawl budget waste. Not all SEO issues are equal and
+        fixing the right things in the right order is what separates an audit
+        from an action plan.
+      </p>
+      <p>
+        Once the critical blockers were resolved and the site was properly
+        indexed, I moved to the on-page layer. Making sure the pages Google
+        could now find were actually optimized for the searches that matter to
+        this organization. Title tags, meta descriptions, internal linking, and
+        keyword alignment.
+      </p>
+      <p>
+        Throughout, I set up the reporting infrastructure in parallel so that
+        every change made after day one had measurement behind it.
+      </p>
+
+      <span class="cs-label">03 — Execution</span>
+      <h2>What was done.</h2>
+
+      <table class="comparison-table" aria-label="Before and after comparison">
+        <thead>
+          <tr>
+            <th>Area</th>
+            <th>Before</th>
+            <th>After</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Indexing</td>
+            <td class="val-before">Critical crawl errors; pages not indexed</td>
+            <td class="val-after">
+              Errors resolved; full site indexing confirmed in GSC
+            </td>
+          </tr>
+          <tr>
+            <td>Crawl errors</td>
+            <td class="val-before">
+              Multiple error types blocking crawl efficiency
+            </td>
+            <td class="val-after">
+              Systematically identified and fixed by priority
+            </td>
+          </tr>
+          <tr>
+            <td>Title tags</td>
+            <td class="val-before">Missing, duplicate, or non-descriptive</td>
+            <td class="val-after">
+              Rewritten to be unique, keyword-informed, and descriptive
+            </td>
+          </tr>
+          <tr>
+            <td>Meta descriptions</td>
+            <td class="val-before">Missing across most pages</td>
+            <td class="val-after">
+              Written for each page with intent-aligned copy
+            </td>
+          </tr>
+          <tr>
+            <td>Internal linking</td>
+            <td class="val-before">No intentional internal link structure</td>
+            <td class="val-after">
+              Logical link architecture connecting key pages
+            </td>
+          </tr>
+          <tr>
+            <td>Analytics</td>
+            <td class="val-before">No GA4, no GSC</td>
+            <td class="val-after">
+              GSC verified, GA4 configured with conversion tracking
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="cs-callout">
+        Worth noting: the CTR dip from 3.6% to 2.2% is expected. When
+        impressions grow 456%, you start showing up for a much broader range of
+        queries including broader, earlier-funnel searches with naturally lower
+        click rates. The absolute click volume more than tripled. That is the
+        metric that matters.
+      </div>
+
+      <span class="cs-label">04 — The Data</span>
+      <h2>GSC performance, year over year.</h2>
+      <p>
+        The charts below show the same 5-month window compared year over year.
+        January 14 to May 14, the period after the technical work was complete
+        versus the same period the prior year with no SEO infrastructure in
+        place.
+      </p>
+
+      <!-- Chart 1: Clicks + Impressions -->
+      <div class="chart-wrapper reveal">
+        <p class="chart-wrapper__title">
+          Clicks &amp; Impressions — YoY Comparison
+        </p>
+        <div class="chart-legend">
+          <div class="chart-legend__item">
+            <div class="chart-legend__dot" style="background: #c8a97e"></div>
+            <span>2026 (after SEO work)</span>
+          </div>
+          <div class="chart-legend__item">
+            <div
+              class="chart-legend__dot"
+              style="
+                background: rgba(200, 169, 126, 0.3);
+                border: 1px dashed #c8a97e;
+              "
+            ></div>
+            <span>2025 (baseline)</span>
+          </div>
+        </div>
+        <canvas
+          id="clicksChart"
+          height="100"
+          aria-label="Clicks year over year comparison chart"
+        ></canvas>
+      </div>
+
+      <!-- Chart 2: Position improvement -->
+      <div class="chart-wrapper reveal">
+        <p class="chart-wrapper__title">Average Position — 25.3 to 7.7</p>
+        <p style="font-size: 14px; color: var(--muted); margin-bottom: 20px">
+          Note: lower is better. Position 1 is the top result.
+        </p>
+        <canvas
+          id="positionChart"
+          height="80"
+          aria-label="Average position improvement chart"
+        ></canvas>
+      </div>
+
+      <!-- Chart 3: Key metrics bar -->
+      <div class="chart-wrapper reveal">
+        <p class="chart-wrapper__title">Key Metrics — Before vs After</p>
+        <canvas
+          id="metricsChart"
+          height="90"
+          aria-label="Key metrics comparison bar chart"
+        ></canvas>
+      </div>
+
+      <span class="cs-label">05 — Results</span>
+      <h2>What the numbers mean.</h2>
+      <p>
+        Over this 5-month window year over year, total clicks grew from 675 to
+        2,260 and total impressions went from 18,700 to 104,000. Average
+        position improved from 25.3 to 7.7.
+      </p>
+      <p>
+        It is worth being honest about context here. During this same period,
+        Utica Creative Reuse also opened their first physical location, received
+        local press coverage, and had an active social media presence. All of
+        those factors contributed to increased brand awareness and search
+        demand. SEO did not happen in a vacuum.
+      </p>
+      <p>
+        What I can say with confidence is that the technical foundation made it
+        possible for Google to find, index, and surface the site. Before the
+        work, it was not showing up at all. The infrastructure I built meant
+        that when the store opened and people started searching for them, the
+        site was ready to be found.
+      </p>
+
+      <span class="cs-label">06 — Reflection</span>
+      <h2>What I would do differently.</h2>
+      <p>
+        The obvious next lever here is content. A few well-optimized pages
+        targeting local search queries would extend these gains considerably.
+        That was not in scope but it is the clear next step for a client in this
+        position.
+      </p>
+      <p>
+        I would also set up event tracking in GA4 earlier. GSC tells you about
+        search visibility. GA4 event data tells you what people do once they
+        arrive. Building that from day one gives you a much cleaner picture of
+        which improvements are actually driving business outcomes.
+      </p>
+    </article>
+
+    <!-- Case study nav -->
+    <div class="cs-nav">
+      <a href="work.html">← Back to Work</a>
+      <a href="contact.html">Interested in similar results? →</a>
+    </div>
+
+    <!-- CTA -->
+    <section class="cta-band" aria-labelledby="cs-cta-heading">
+      <div style="position: relative; z-index: 1">
+        <h4>Work Together</h4>
+        <h2 id="cs-cta-heading">Want results like these for your site?</h2>
+        <p>
+          This is what a thorough technical SEO engagement looks like. Let's
+          talk about your organic program.
+        </p>
+        <div class="cta-band__btns">
+          <a href="contact.html" class="btn btn-primary"
+            >Start a Conversation</a
+          >
+          <a href="services.html" class="btn btn-outline-white"
+            >View Services</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer__brand">Olivia Swann</div>
+      <nav class="footer__links" aria-label="Footer navigation">
+        <a href="work.html">Work</a>
+        <a href="services.html">Services</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="footer__social">
+        <a
+          href="https://github.com/xorsx"
+          aria-label="GitHub"
+          rel="noopener noreferrer"
+          target="_blank"
+          ><i class="fa-brands fa-github"></i
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/olivia-swann-06a260131/"
+          aria-label="LinkedIn"
+          rel="noopener noreferrer"
+          target="_blank"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
+        <a href="mailto:oliviarswann@gmail.com" aria-label="Email"
+          ><i class="fa-solid fa-envelope"></i
+        ></a>
+      </div>
+      <p class="footer__copy">Coded with 🤎 by Olivia Swann © 2026</p>
+    </footer>
+
+    <!-- Chart.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+    <script src="app.js"></script>
+    <script>
+      // Shared chart defaults
+      Chart.defaults.font.family = "'DM Sans', system-ui, sans-serif";
+      Chart.defaults.color = "#7A6E68";
+
+      const sand = "#C8A97E";
+      const sandFade = "rgba(200,169,126,0.25)";
+      const ink = "#1A1714";
+      const green = "#16A34A";
+      const greenFade = "rgba(22,163,74,0.15)";
+
+      // Month labels for the 5-month window
+      const months = ["Jan", "Feb", "Mar", "Apr", "May"];
+
+      // ── Chart 1: Clicks YoY ──
+      new Chart(document.getElementById("clicksChart"), {
+        type: "line",
+        data: {
+          labels: months,
+          datasets: [
+            {
+              label: "Clicks 2026",
+              data: [320, 380, 520, 480, 560],
+              borderColor: sand,
+              backgroundColor: sandFade,
+              borderWidth: 2.5,
+              pointRadius: 4,
+              pointBackgroundColor: sand,
+              fill: true,
+              tension: 0.35,
+            },
+            {
+              label: "Clicks 2025",
+              data: [100, 110, 160, 130, 175],
+              borderColor: "rgba(200,169,126,0.45)",
+              backgroundColor: "transparent",
+              borderWidth: 1.5,
+              borderDash: [6, 4],
+              pointRadius: 3,
+              pointBackgroundColor: "rgba(200,169,126,0.45)",
+              fill: false,
+              tension: 0.35,
+            },
+          ],
+        },
+        options: {
+          responsive: true,
+          plugins: {
+            legend: { display: false },
+            tooltip: {
+              backgroundColor: ink,
+              titleColor: "#fff",
+              bodyColor: "rgba(255,255,255,0.7)",
+              padding: 12,
+              cornerRadius: 6,
+            },
+          },
+          scales: {
+            x: {
+              grid: { color: "rgba(0,0,0,0.04)" },
+              border: { display: false },
+            },
+            y: {
+              grid: { color: "rgba(0,0,0,0.04)" },
+              border: { display: false },
+              ticks: { callback: (v) => v.toLocaleString() },
+            },
+          },
+        },
+      });
+
+      // ── Chart 2: Position improvement (lower = better) ──
+      new Chart(document.getElementById("positionChart"), {
+        type: "line",
+        data: {
+          labels: months,
+          datasets: [
+            {
+              label: "Avg. Position 2026",
+              data: [18, 14, 10, 8.5, 7.7],
+              borderColor: green,
+              backgroundColor: greenFade,
+              borderWidth: 2.5,
+              pointRadius: 4,
+              pointBackgroundColor: green,
+              fill: true,
+              tension: 0.35,
+            },
+            {
+              label: "Avg. Position 2025",
+              data: [26, 25.5, 25, 25.8, 24],
+              borderColor: "rgba(122,110,104,0.4)",
+              backgroundColor: "transparent",
+              borderWidth: 1.5,
+              borderDash: [6, 4],
+              pointRadius: 3,
+              fill: false,
+              tension: 0.35,
+            },
+          ],
+        },
+        options: {
+          responsive: true,
+          plugins: {
+            legend: { display: false },
+            tooltip: {
+              backgroundColor: ink,
+              titleColor: "#fff",
+              bodyColor: "rgba(255,255,255,0.7)",
+              padding: 12,
+              cornerRadius: 6,
+              callbacks: {
+                label: (ctx) =>
+                  `Position: ${ctx.parsed.y} ${ctx.parsed.y < 10 ? "✓ Page 1" : ""}`,
+              },
+            },
+          },
+          scales: {
+            x: {
+              grid: { color: "rgba(0,0,0,0.04)" },
+              border: { display: false },
+            },
+            y: {
+              reverse: true,
+              grid: { color: "rgba(0,0,0,0.04)" },
+              border: { display: false },
+              min: 1,
+              max: 30,
+              ticks: {
+                callback: (v) => `#${v}`,
+                stepSize: 5,
+              },
+            },
+          },
+        },
+      });
+
+      // ── Chart 3: Key metrics bar ──
+      new Chart(document.getElementById("metricsChart"), {
+        type: "bar",
+        data: {
+          labels: ["Total Clicks", "Total Impressions (÷10 for scale)"],
+          datasets: [
+            {
+              label: "Jan–May 2025 (Baseline)",
+              data: [675, 1870],
+              backgroundColor: "rgba(200,169,126,0.25)",
+              borderColor: "rgba(200,169,126,0.6)",
+              borderWidth: 1.5,
+              borderRadius: 4,
+            },
+            {
+              label: "Jan–May 2026 (After SEO)",
+              data: [2260, 10400],
+              backgroundColor: sandFade,
+              backgroundColor: sand,
+              borderColor: sand,
+              borderWidth: 0,
+              borderRadius: 4,
+            },
+          ],
+        },
+        options: {
+          responsive: true,
+          plugins: {
+            legend: {
+              position: "top",
+              labels: { padding: 20, usePointStyle: true, pointStyleWidth: 10 },
+            },
+            tooltip: {
+              backgroundColor: ink,
+              titleColor: "#fff",
+              bodyColor: "rgba(255,255,255,0.7)",
+              padding: 12,
+              cornerRadius: 6,
+              callbacks: {
+                label: (ctx) => {
+                  const raw =
+                    ctx.datasetIndex === 1
+                      ? ctx.dataIndex === 1
+                        ? "104,000"
+                        : ctx.parsed.y.toLocaleString()
+                      : ctx.dataIndex === 1
+                        ? "18,700"
+                        : ctx.parsed.y.toLocaleString();
+                  return ` ${ctx.dataset.label}: ${raw}`;
+                },
+              },
+            },
+          },
+          scales: {
+            x: { grid: { display: false }, border: { display: false } },
+            y: {
+              grid: { color: "rgba(0,0,0,0.04)" },
+              border: { display: false },
+              ticks: { callback: (v) => v.toLocaleString() },
+            },
+          },
+        },
+      });
+    </script>
+  </body>
+</html>
