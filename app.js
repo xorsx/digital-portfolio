@@ -1,8 +1,3 @@
-/* ============================================================
-   OLIVIA SWANN — app.js
-   Nav scroll, mobile drawer, scroll reveal, contact form
-   ============================================================ */
-
 document.addEventListener("DOMContentLoaded", () => {
   /* ── Nav: add .scrolled class on scroll ── */
   const nav = document.querySelector(".nav");
