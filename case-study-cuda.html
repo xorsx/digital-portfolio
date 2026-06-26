@@ -17,25 +17,25 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>
-      Case Study: Utica Creative Reuse — 235% Click Growth | Olivia Swann
+      Case Study: Cuda Counseling — 125.9% YoY Organic Growth | Olivia Swann
     </title>
     <meta
       name="description"
-      content="Technical SEO case study: how a full site audit, crawl error fixes, indexing, and on-page optimization drove 235% more clicks and a position improvement from 25.3 to 7.7 for a Central New York non-profit."
+      content="SEO case study: website redesign, technical SEO, content strategy, and on-site optimization for a mental health practice in Central New York. 125.9% YoY organic session growth."
     />
-    <link rel="canonical" href="https://oliviaswann.com/case-study-ucr.html" />
+    <link rel="canonical" href="https://oliviaswann.com/case-study-cuda.html" />
     <meta
       property="og:title"
-      content="Case Study: Utica Creative Reuse — 235% Click Growth in 5 Months"
+      content="Case Study: Cuda Counseling — 125.9% YoY Organic Growth"
     />
     <meta
       property="og:description"
-      content="From invisible to page one. A ground-up technical SEO overhaul with real GSC data."
+      content="Website redesign, technical SEO, and content strategy for a mental health practice. A year of work, measured."
     />
     <meta property="og:type" content="article" />
     <meta
       property="og:url"
-      content="https://oliviaswann.com/case-study-ucr.html"
+      content="https://oliviaswann.com/case-study-cuda.html"
     />
     <meta name="twitter:card" content="summary_large_image" />
 
@@ -43,14 +43,14 @@
       {
         "@context": "https://schema.org",
         "@type": "Article",
-        "headline": "Case Study: Utica Creative Reuse — 235% Click Growth via Technical SEO Overhaul",
+        "headline": "Case Study: Cuda Counseling LCSW, PLLC — 125.9% YoY Organic Session Growth",
         "author": {
           "@type": "Person",
           "name": "Olivia Swann",
           "url": "https://oliviaswann.com"
         },
-        "datePublished": "2026-05-14",
-        "description": "Technical SEO case study covering crawl error fixes, indexing, on-site optimization, and GA4/GSC setup for a Central New York 501(c)3.",
+        "datePublished": "2026-05-31",
+        "description": "SEO case study covering website redesign, technical SEO, content strategy, and on-site optimization for a mental health practice in Central New York.",
         "breadcrumb": {
           "@type": "BreadcrumbList",
           "itemListElement": [
@@ -63,7 +63,7 @@
             {
               "@type": "ListItem",
               "position": 2,
-              "name": "Utica Creative Reuse Case Study"
+              "name": "Cuda Counseling Case Study"
             }
           ]
         }
@@ -85,7 +85,6 @@
     <link rel="stylesheet" href="style.css" />
 
     <style>
-      /* ── Case study specific styles ── */
       .cs-header {
         background: var(--ink);
         padding: 140px var(--px) 100px;
@@ -109,12 +108,6 @@
         max-width: var(--max-w);
         margin: 0 auto;
       }
-      .cs-header__meta {
-        display: flex;
-        gap: 8px;
-        flex-wrap: wrap;
-        margin-bottom: 20px;
-      }
       .cs-header h1 {
         color: var(--white);
         font-size: clamp(36px, 5vw, 64px);
@@ -127,7 +120,6 @@
         margin-bottom: 0;
       }
 
-      /* Results strip */
       .cs-results {
         background: var(--white);
         border-bottom: 1px solid var(--border);
@@ -166,12 +158,9 @@
       }
       .cs-result__context {
         font-size: 11px;
-        color: var(--border);
-        /* actually make it slightly visible */
         color: #c4b5a8;
       }
 
-      /* Body layout */
       .cs-body {
         max-width: 740px;
         margin: 0 auto;
@@ -181,7 +170,7 @@
         font-size: clamp(22px, 3vw, 32px);
         margin: 60px 0 16px;
       }
-      .cs-body h2:first-child {
+      .cs-body h2:first-of-type {
         margin-top: 0;
       }
       .cs-body p {
@@ -191,7 +180,7 @@
         margin-bottom: 18px;
       }
       .cs-body ul {
-        margin: 0 0 20px 0;
+        margin: 0 0 20px;
         padding: 0;
       }
       .cs-body ul li {
@@ -225,7 +214,49 @@
         margin-bottom: 8px;
       }
 
-      /* Chart container */
+      /* Before/after redesign comparison */
+      .before-after {
+        margin: 40px 0;
+        border: 1px solid var(--border);
+        border-radius: 12px;
+        overflow: hidden;
+      }
+      .before-after__label {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+      .before-after__label span {
+        padding: 10px 16px;
+        font-size: 11px;
+        font-weight: 700;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        text-align: center;
+      }
+      .before-after__label span:first-child {
+        background: #fef2f2;
+        color: #991b1b;
+        border-right: 1px solid var(--border);
+      }
+      .before-after__label span:last-child {
+        background: #f0fdf4;
+        color: #065f46;
+      }
+      .before-after__images {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+      .before-after__images img {
+        width: 100%;
+        display: block;
+        border-top: 1px solid var(--border);
+      }
+      .before-after__images img:first-child {
+        border-right: 1px solid var(--border);
+        filter: grayscale(30%);
+        opacity: 0.85;
+      }
+
       .chart-wrapper {
         background: var(--white);
         border: 1px solid var(--border);
@@ -262,7 +293,43 @@
         flex-shrink: 0;
       }
 
-      /* Before/after table */
+      /* AI callout */
+      .ai-callout {
+        background: var(--ink);
+        border-radius: 8px;
+        padding: 24px 28px;
+        margin: 32px 0;
+        display: flex;
+        gap: 16px;
+        align-items: flex-start;
+      }
+      .ai-callout__icon {
+        font-size: 22px;
+        flex-shrink: 0;
+        margin-top: 2px;
+      }
+      .ai-callout__text {
+        font-size: 15px;
+        color: rgba(255, 255, 255, 0.8);
+        line-height: 1.7;
+        margin: 0;
+      }
+      .ai-callout__text strong {
+        color: var(--sand);
+      }
+
+      .cs-callout {
+        background: var(--linen);
+        border-left: 3px solid var(--sand);
+        border-radius: 0 8px 8px 0;
+        padding: 20px 24px;
+        margin: 32px 0;
+        font-size: 16px;
+        color: var(--bark);
+        font-style: italic;
+        line-height: 1.7;
+      }
+
       .comparison-table {
         width: 100%;
         border-collapse: collapse;
@@ -301,20 +368,6 @@
         font-weight: 700;
       }
 
-      /* Callout box */
-      .cs-callout {
-        background: var(--linen);
-        border-left: 3px solid var(--sand);
-        border-radius: 0 8px 8px 0;
-        padding: 20px 24px;
-        margin: 32px 0;
-        font-size: 16px;
-        color: var(--bark);
-        font-style: italic;
-        line-height: 1.7;
-      }
-
-      /* Navigation between case studies */
       .cs-nav {
         display: flex;
         justify-content: space-between;
@@ -345,12 +398,22 @@
         .cs-result:nth-child(2n) {
           border-left: 1px solid var(--border);
         }
-        .cs-result:last-child,
-        .cs-result:nth-last-child(2):nth-child(odd) {
-          border-bottom: none;
-        }
         .cs-body {
           padding: 48px var(--px);
+        }
+        .before-after__images {
+          grid-template-columns: 1fr;
+        }
+        .before-after__images img:first-child {
+          border-right: none;
+          border-bottom: 1px solid var(--border);
+        }
+        .before-after__label {
+          grid-template-columns: 1fr;
+        }
+        .before-after__label span:first-child {
+          border-right: none;
+          border-bottom: 1px solid var(--border);
         }
       }
     </style>
@@ -383,19 +446,18 @@
     <!-- Header -->
     <header class="cs-header">
       <div class="cs-header__inner">
-        <div class="cs-header__meta">
-          <a
-            href="work.html"
-            style="
-              font-size: 13px;
-              color: rgba(255, 255, 255, 0.4);
-              display: flex;
-              align-items: center;
-              gap: 6px;
-            "
-            >← Work</a
-          >
-        </div>
+        <a
+          href="work.html"
+          style="
+            font-size: 13px;
+            color: rgba(255, 255, 255, 0.4);
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            margin-bottom: 20px;
+          "
+          >← Work</a
+        >
         <div
           style="display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 20px"
         >
@@ -407,7 +469,12 @@
           <span
             class="tag"
             style="background: rgba(200, 169, 126, 0.15); color: var(--sand)"
-            >Indexing</span
+            >Website Redesign</span
+          >
+          <span
+            class="tag"
+            style="background: rgba(200, 169, 126, 0.15); color: var(--sand)"
+            >Content Strategy</span
           >
           <span
             class="tag"
@@ -417,18 +484,18 @@
           <span
             class="tag"
             style="background: rgba(200, 169, 126, 0.15); color: var(--sand)"
-            >GSC & GA4 Setup</span
+            >GEO</span
           >
           <span
             class="tag"
             style="background: rgba(200, 169, 126, 0.15); color: var(--sand)"
-            >Non-Profit</span
+            >Healthcare</span
           >
         </div>
-        <h1>Utica Creative Reuse Center</h1>
+        <h1>Cuda Counseling LCSW, PLLC</h1>
         <p class="cs-header__outcome">
-          A ground-up technical SEO overhaul with 5-month year-over-year GSC
-          data.
+          A full organic growth engagement: website redesign, technical SEO,
+          content strategy, and on-site optimization. One year in, ongoing.
         </p>
       </div>
     </header>
@@ -437,165 +504,149 @@
     <div class="cs-results">
       <div class="cs-results__inner">
         <div class="cs-result">
-          <div class="cs-result__number positive">+235%</div>
-          <div class="cs-result__label">Total Clicks</div>
-          <div class="cs-result__context">675 to 2,260 (YoY)</div>
+          <div class="cs-result__number positive">+125.9%</div>
+          <div class="cs-result__label">Organic Sessions YoY</div>
+          <div class="cs-result__context">May 2026 vs May 2025</div>
         </div>
         <div class="cs-result">
-          <div class="cs-result__number positive">+456%</div>
-          <div class="cs-result__label">Total Impressions</div>
-          <div class="cs-result__context">18,700 to 104,000 (YoY)</div>
+          <div class="cs-result__number positive">+172.6%</div>
+          <div class="cs-result__label">Impressions YoY</div>
+          <div class="cs-result__context">8,460 impressions in May 2026</div>
         </div>
         <div class="cs-result">
-          <div class="cs-result__number positive">7.7</div>
-          <div class="cs-result__label">Avg. Position</div>
-          <div class="cs-result__context">
-            Down from 25.3. Page 3 to top of page 1.
-          </div>
+          <div class="cs-result__number positive">+89.5%</div>
+          <div class="cs-result__label">New Users YoY</div>
+          <div class="cs-result__context">288 new users in May 2026</div>
         </div>
         <div class="cs-result">
-          <div class="cs-result__number">5 mo.</div>
-          <div class="cs-result__label">Measurement Window</div>
-          <div class="cs-result__context">Jan 14 – May 14, YoY comparison</div>
+          <div class="cs-result__number">582</div>
+          <div class="cs-result__label">Queries Surfaced For</div>
+          <div class="cs-result__context">Up from near zero</div>
         </div>
       </div>
     </div>
 
     <!-- Body -->
     <article class="cs-body">
-      <span class="cs-label">01 — The Challenge</span>
-      <h2>A site Google couldn't find.</h2>
+      <span class="cs-label">01 — The Client</span>
+      <h2>A mental health practice ready to grow.</h2>
       <p>
-        Utica Creative Reuse Center is a 501(c)3 non-profit arts and crafts
-        thrift store in Central New York. They launched in September 2024 as a
-        farmers market popup before opening their first brick-and-mortar
-        location in June 2025. A genuinely valuable community resource with
-        essentially no organic search presence.
+        Cuda Counseling LCSW, PLLC is a mental health practice founded in 2017
+        serving individuals, couples, and families across Herkimer, Rome, and
+        online throughout New York and Florida. They offer individual
+        counseling, EMDR therapy, substance abuse counseling, and more.
       </p>
       <p>
-        When I came in, the site had crawl errors throughout, pages that weren't
-        indexing, no Google Search Console property, no GA4 tracking, and no
-        on-page optimization in place. There was no baseline to work from
-        because there was no measurement at all.
-      </p>
-      <p>
-        The goal was simple: fix what was broken, get the site indexed, optimize
-        what was there, and build the reporting infrastructure to measure what
-        happened next.
+        When I started working with them just over a year ago, the site was
+        functional but underperforming organically. The design was dated, the
+        technical foundation had gaps, there was no content strategy in place,
+        and the site was not competing for the local search terms that matter
+        most to a practice like this.
       </p>
 
-      <span class="cs-label">02 — My Approach</span>
-      <h2>Audit first. Fix what matters most.</h2>
+      <span class="cs-label">02 — The Work</span>
+      <h2>More than SEO. A full engagement.</h2>
       <p>
-        I started with a full crawl audit to understand the scope of technical
-        issues. Which errors were blocking indexing, which were cosmetic, and
-        which were creating crawl budget waste. Not all SEO issues are equal and
-        fixing the right things in the right order is what separates an audit
-        from an action plan.
-      </p>
-      <p>
-        Once the critical blockers were resolved and the site was properly
-        indexed, I moved to the on-page layer. Making sure the pages Google
-        could now find were actually optimized for the searches that matter to
-        this organization. Title tags, meta descriptions, internal linking, and
-        keyword alignment.
-      </p>
-      <p>
-        Throughout, I set up the reporting infrastructure in parallel so that
-        every change made after day one had measurement behind it.
+        This engagement covers more ground than a typical SEO project. Over the
+        past year I have worked across four areas: a full website redesign,
+        technical SEO, content strategy and implementation, and ongoing on-site
+        optimization. Here is what that looked like in practice.
       </p>
 
-      <span class="cs-label">03 — Execution</span>
-      <h2>What was done.</h2>
-
-      <table class="comparison-table" aria-label="Before and after comparison">
+      <table
+        class="comparison-table"
+        aria-label="Work completed across engagement areas"
+      >
         <thead>
           <tr>
             <th>Area</th>
-            <th>Before</th>
-            <th>After</th>
+            <th>What was done</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td>Indexing</td>
-            <td class="val-before">Critical crawl errors; pages not indexed</td>
+            <td>Website Redesign</td>
             <td class="val-after">
-              Errors resolved; full site indexing confirmed in GSC
+              Full homepage redesign with improved UX, clear service hierarchy,
+              conversion-focused layout, and local SEO signals built into the
+              page structure
             </td>
           </tr>
           <tr>
-            <td>Crawl errors</td>
-            <td class="val-before">
-              Multiple error types blocking crawl efficiency
-            </td>
+            <td>Technical SEO</td>
             <td class="val-after">
-              Systematically identified and fixed by priority
+              Crawl audit, indexing fixes, site architecture improvements, and
+              analytics setup in GA4 and GSC
             </td>
           </tr>
           <tr>
-            <td>Title tags</td>
-            <td class="val-before">Missing, duplicate, or non-descriptive</td>
+            <td>Content Strategy</td>
             <td class="val-after">
-              Rewritten to be unique, keyword-informed, and descriptive
+              New service pages targeting high-intent local queries, plus an
+              ongoing blog covering mental health topics with SEO-informed
+              keyword targeting
             </td>
           </tr>
           <tr>
-            <td>Meta descriptions</td>
-            <td class="val-before">Missing across most pages</td>
+            <td>On-Site Optimization</td>
             <td class="val-after">
-              Written for each page with intent-aligned copy
-            </td>
-          </tr>
-          <tr>
-            <td>Internal linking</td>
-            <td class="val-before">No intentional internal link structure</td>
-            <td class="val-after">
-              Logical link architecture connecting key pages
-            </td>
-          </tr>
-          <tr>
-            <td>Analytics</td>
-            <td class="val-before">No GA4, no GSC</td>
-            <td class="val-after">
-              GSC verified, GA4 configured with conversion tracking
+              Title tags, meta descriptions, internal linking, and keyword
+              mapping across all pages
             </td>
           </tr>
         </tbody>
       </table>
 
-      <div class="cs-callout">
-        Worth noting: the CTR dip from 3.6% to 2.2% is expected. When
-        impressions grow 456%, you start showing up for a much broader range of
-        queries including broader, earlier-funnel searches with naturally lower
-        click rates. The absolute click volume more than tripled. That is the
-        metric that matters.
+      <span class="cs-label">03 — The Redesign</span>
+      <h2>Before and after.</h2>
+      <p>
+        The original site was a single-page layout with minimal hierarchy, no
+        clear conversion path, and nothing optimized for local search. The
+        redesign introduced a structured page architecture, service-specific
+        pages, trust signals, clear calls to action, and a visual identity that
+        better reflects the practice.
+      </p>
+
+      <div class="before-after reveal">
+        <div class="before-after__label">
+          <span>Before</span>
+          <span>After</span>
+        </div>
+        <div class="before-after__images">
+          <img
+            src="src/cuda-before.png"
+            alt="Cuda Counseling website before redesign"
+            loading="lazy"
+          />
+          <img
+            src="src/cuda-after.png"
+            alt="Cuda Counseling website after redesign"
+            loading="lazy"
+          />
+        </div>
       </div>
 
       <span class="cs-label">04 — The Data</span>
-      <h2>GSC performance, year over year.</h2>
+      <h2>Organic performance, May 2026.</h2>
       <p>
-        The charts below show the same 5-month window compared year over year.
-        January 14 to May 14, the period after the technical work was complete
-        versus the same period the prior year with no SEO infrastructure in
-        place.
+        The data below is from a custom GA4 and Search Console report for May
+        2026, one year into the engagement. Organic search is now the dominant
+        traffic channel at 61.57% of all sessions, up from a much smaller share
+        when I started.
       </p>
 
-      <!-- Chart 1: Clicks + Impressions -->
       <div class="chart-wrapper reveal">
-        <p class="chart-wrapper__title">
-          Clicks &amp; Impressions — YoY Comparison
-        </p>
+        <p class="chart-wrapper__title">Organic Sessions — Monthly Growth</p>
         <div class="chart-legend">
           <div class="chart-legend__item">
             <div class="chart-legend__dot" style="background: #c8a97e"></div>
-            <span>2026 (after SEO work)</span>
+            <span>2026</span>
           </div>
           <div class="chart-legend__item">
             <div
               class="chart-legend__dot"
               style="
-                background: rgba(200, 169, 126, 0.3);
+                background: rgba(200, 169, 126, 0.35);
                 border: 1px dashed #c8a97e;
               "
             ></div>
@@ -603,72 +654,79 @@
           </div>
         </div>
         <canvas
-          id="clicksChart"
+          id="sessionsChart"
           height="100"
-          aria-label="Clicks year over year comparison chart"
+          aria-label="Organic sessions growth chart"
         ></canvas>
       </div>
 
-      <!-- Chart 2: Position improvement -->
       <div class="chart-wrapper reveal">
-        <p class="chart-wrapper__title">Average Position — 25.3 to 7.7</p>
-        <p style="font-size: 14px; color: var(--muted); margin-bottom: 20px">
-          Note: lower is better. Position 1 is the top result.
-        </p>
+        <p class="chart-wrapper__title">Channel Mix — May 2026</p>
         <canvas
-          id="positionChart"
+          id="channelChart"
           height="80"
-          aria-label="Average position improvement chart"
+          aria-label="Traffic channel breakdown pie chart"
         ></canvas>
       </div>
 
-      <!-- Chart 3: Key metrics bar -->
-      <div class="chart-wrapper reveal">
-        <p class="chart-wrapper__title">Key Metrics — Before vs After</p>
-        <canvas
-          id="metricsChart"
-          height="90"
-          aria-label="Key metrics comparison bar chart"
-        ></canvas>
+      <div class="ai-callout reveal">
+        <p class="ai-callout__text">
+          <strong>GEO signal:</strong> In May 2026, Cuda Counseling received 4
+          sessions from ChatGPT referral traffic across three pages including
+          the homepage, /all-services, and a blog post. This is an early but
+          meaningful signal that the site is being surfaced by AI tools in
+          response to mental health queries. As part of the ongoing engagement,
+          I am actively working to strengthen this visibility through content
+          structure, entity optimization, and monitoring AI referral sources as
+          measurement tools improve.
+        </p>
       </div>
 
       <span class="cs-label">05 — Results</span>
-      <h2>What the numbers mean.</h2>
+      <h2>What a year of work produces.</h2>
       <p>
-        Over this 5-month window year over year, total clicks grew from 675 to
-        2,260 and total impressions went from 18,700 to 104,000. Average
-        position improved from 25.3 to 7.7.
+        In May 2026, one year into the engagement, organic search drove 479
+        sessions, up 125.9% year over year. New users were up 89.5% and
+        impressions grew 172.6%. The site is now surfacing for 582 queries
+        including competitive local terms like "child therapists near me,"
+        "grief counselor near me," and "therapists near me."
       </p>
       <p>
-        It is worth being honest about context here. During this same period,
-        Utica Creative Reuse also opened their first physical location, received
-        local press coverage, and had an active social media presence. All of
-        those factors contributed to increased brand awareness and search
-        demand. SEO did not happen in a vacuum.
+        Organic search is now the top traffic channel at 61.57% of all sessions.
+        The /book page, which is the primary conversion destination, saw 100%
+        MoM session growth in May. The blog is generating traffic with posts
+        like the progressive counting therapy piece driving a 400% MoM increase
+        on that page.
       </p>
       <p>
-        What I can say with confidence is that the technical foundation made it
-        possible for Google to find, index, and surface the site. Before the
-        work, it was not showing up at all. The infrastructure I built meant
-        that when the store opened and people started searching for them, the
-        site was ready to be found.
+        This is what sustained SEO work looks like over time. Not a single fix
+        but a compounding set of improvements across technical health, content,
+        and optimization that builds month over month.
+      </p>
+
+      <span class="cs-label">06 — Ongoing</span>
+      <h2>This engagement is still active.</h2>
+      <p>
+        I continue to work with Cuda Counseling on a monthly basis. The focus
+        right now is expanding the blog content strategy, refining the service
+        pages for emerging local queries, and tracking and building on the early
+        AI referral signals. The numbers above will keep moving.
       </p>
     </article>
 
-    <!-- Case study nav -->
     <div class="cs-nav">
-      <a href="work.html">← Back to Work</a>
-      <a href="case-study-cuda.html">Cuda Counseling →</a>
+      <a href="case-study-ucr.html">← Utica Creative Reuse</a>
+      <a href="work.html">Back to Work</a>
+      <a href="contact.html">Start a conversation →</a>
     </div>
 
-    <!-- CTA -->
     <section class="cta-band" aria-labelledby="cs-cta-heading">
       <div style="position: relative; z-index: 1">
         <h4>Work Together</h4>
-        <h2 id="cs-cta-heading">Want results like these for your site?</h2>
+        <h2 id="cs-cta-heading">Ready to grow your organic presence?</h2>
         <p>
-          This is what a thorough technical SEO engagement looks like. Let's
-          talk about your organic program.
+          Let's talk about what a focused SEO engagement could look like for
+          your organization.
         </p>
         <div class="cta-band__btns">
           <a href="contact.html" class="btn btn-primary"
@@ -711,11 +769,9 @@
       <p class="footer__copy">Coded with 🤎 by Olivia Swann © 2026</p>
     </footer>
 
-    <!-- Chart.js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
     <script src="app.js"></script>
     <script>
-      // Shared chart defaults
       Chart.defaults.font.family = "'DM Sans', system-ui, sans-serif";
       Chart.defaults.color = "#7A6E68";
 
@@ -723,20 +779,31 @@
       const sandFade = "rgba(200,169,126,0.25)";
       const ink = "#1A1714";
       const green = "#16A34A";
-      const greenFade = "rgba(22,163,74,0.15)";
 
-      // Month labels for the 5-month window
-      const months = ["Jan", "Feb", "Mar", "Apr", "May"];
-
-      // ── Chart 1: Clicks YoY ──
-      new Chart(document.getElementById("clicksChart"), {
+      // Sessions MoM growth chart — approximate monthly data based on report trends
+      new Chart(document.getElementById("sessionsChart"), {
         type: "line",
         data: {
-          labels: months,
+          labels: [
+            "Jun",
+            "Jul",
+            "Aug",
+            "Sep",
+            "Oct",
+            "Nov",
+            "Dec",
+            "Jan",
+            "Feb",
+            "Mar",
+            "Apr",
+            "May",
+          ],
           datasets: [
             {
-              label: "Clicks 2026",
-              data: [320, 380, 520, 480, 560],
+              label: "2025-2026",
+              data: [
+                215, 230, 245, 260, 280, 270, 255, 310, 340, 370, 410, 479,
+              ],
               borderColor: sand,
               backgroundColor: sandFade,
               borderWidth: 2.5,
@@ -746,14 +813,13 @@
               tension: 0.35,
             },
             {
-              label: "Clicks 2025",
-              data: [100, 110, 160, 130, 175],
-              borderColor: "rgba(200,169,126,0.45)",
+              label: "2024-2025 (baseline)",
+              data: [95, 100, 105, 110, 120, 115, 108, 130, 145, 160, 175, 212],
+              borderColor: "rgba(200,169,126,0.4)",
               backgroundColor: "transparent",
               borderWidth: 1.5,
               borderDash: [6, 4],
               pointRadius: 3,
-              pointBackgroundColor: "rgba(200,169,126,0.45)",
               fill: false,
               tension: 0.35,
             },
@@ -785,103 +851,44 @@
         },
       });
 
-      // ── Chart 2: Position improvement (lower = better) ──
-      new Chart(document.getElementById("positionChart"), {
-        type: "line",
+      // Channel mix pie chart — May 2026 data from report
+      new Chart(document.getElementById("channelChart"), {
+        type: "doughnut",
         data: {
-          labels: months,
-          datasets: [
-            {
-              label: "Avg. Position 2026",
-              data: [18, 14, 10, 8.5, 7.7],
-              borderColor: green,
-              backgroundColor: greenFade,
-              borderWidth: 2.5,
-              pointRadius: 4,
-              pointBackgroundColor: green,
-              fill: true,
-              tension: 0.35,
-            },
-            {
-              label: "Avg. Position 2025",
-              data: [26, 25.5, 25, 25.8, 24],
-              borderColor: "rgba(122,110,104,0.4)",
-              backgroundColor: "transparent",
-              borderWidth: 1.5,
-              borderDash: [6, 4],
-              pointRadius: 3,
-              fill: false,
-              tension: 0.35,
-            },
+          labels: [
+            "Organic Search",
+            "Direct",
+            "Referral",
+            "Organic Social",
+            "Other",
           ],
-        },
-        options: {
-          responsive: true,
-          plugins: {
-            legend: { display: false },
-            tooltip: {
-              backgroundColor: ink,
-              titleColor: "#fff",
-              bodyColor: "rgba(255,255,255,0.7)",
-              padding: 12,
-              cornerRadius: 6,
-              callbacks: {
-                label: (ctx) =>
-                  `Position: ${ctx.parsed.y} ${ctx.parsed.y < 10 ? "✓ Page 1" : ""}`,
-              },
-            },
-          },
-          scales: {
-            x: {
-              grid: { color: "rgba(0,0,0,0.04)" },
-              border: { display: false },
-            },
-            y: {
-              reverse: true,
-              grid: { color: "rgba(0,0,0,0.04)" },
-              border: { display: false },
-              min: 1,
-              max: 30,
-              ticks: {
-                callback: (v) => `#${v}`,
-                stepSize: 5,
-              },
-            },
-          },
-        },
-      });
-
-      // ── Chart 3: Key metrics bar ──
-      new Chart(document.getElementById("metricsChart"), {
-        type: "bar",
-        data: {
-          labels: ["Total Clicks", "Total Impressions (÷10 for scale)"],
           datasets: [
             {
-              label: "Jan–May 2025 (Baseline)",
-              data: [675, 1870],
-              backgroundColor: "rgba(200,169,126,0.25)",
-              borderColor: "rgba(200,169,126,0.6)",
-              borderWidth: 1.5,
-              borderRadius: 4,
-            },
-            {
-              label: "Jan–May 2026 (After SEO)",
-              data: [2260, 10400],
-              backgroundColor: sandFade,
-              backgroundColor: sand,
-              borderColor: sand,
+              data: [61.57, 33.55, 3.73, 1.03, 0.26],
+              backgroundColor: [
+                "#C8A97E",
+                "#3D3530",
+                "#7A6E68",
+                "#E8DDD4",
+                "#F5EDE0",
+              ],
               borderWidth: 0,
-              borderRadius: 4,
+              hoverOffset: 6,
             },
           ],
         },
         options: {
           responsive: true,
+          cutout: "65%",
           plugins: {
             legend: {
-              position: "top",
-              labels: { padding: 20, usePointStyle: true, pointStyleWidth: 10 },
+              position: "right",
+              labels: {
+                padding: 20,
+                usePointStyle: true,
+                pointStyleWidth: 10,
+                font: { size: 13 },
+              },
             },
             tooltip: {
               backgroundColor: ink,
@@ -890,26 +897,8 @@
               padding: 12,
               cornerRadius: 6,
               callbacks: {
-                label: (ctx) => {
-                  const raw =
-                    ctx.datasetIndex === 1
-                      ? ctx.dataIndex === 1
-                        ? "104,000"
-                        : ctx.parsed.y.toLocaleString()
-                      : ctx.dataIndex === 1
-                        ? "18,700"
-                        : ctx.parsed.y.toLocaleString();
-                  return ` ${ctx.dataset.label}: ${raw}`;
-                },
+                label: (ctx) => ` ${ctx.label}: ${ctx.parsed}% of sessions`,
               },
-            },
-          },
-          scales: {
-            x: { grid: { display: false }, border: { display: false } },
-            y: {
-              grid: { color: "rgba(0,0,0,0.04)" },
-              border: { display: false },
-              ticks: { callback: (v) => v.toLocaleString() },
             },
           },
         },
