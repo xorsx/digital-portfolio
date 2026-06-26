@@ -13,7 +13,6 @@
       gtag("js", new Date());
       gtag("config", "G-M4MW4SM3Q3");
     </script>
-
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>
@@ -38,7 +37,6 @@
       content="https://oliviaswann.com/case-study-cuda.html"
     />
     <meta name="twitter:card" content="summary_large_image" />
-
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -69,7 +67,6 @@
         }
       }
     </script>
-
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -83,7 +80,6 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="style.css" />
-
     <style>
       .cs-header {
         background: var(--ink);
@@ -119,7 +115,6 @@
         font-weight: 500;
         margin-bottom: 0;
       }
-
       .cs-results {
         background: var(--white);
         border-bottom: 1px solid var(--border);
@@ -160,7 +155,6 @@
         font-size: 11px;
         color: #c4b5a8;
       }
-
       .cs-body {
         max-width: 740px;
         margin: 0 auto;
@@ -179,30 +173,6 @@
         color: var(--bark);
         margin-bottom: 18px;
       }
-      .cs-body ul {
-        margin: 0 0 20px;
-        padding: 0;
-      }
-      .cs-body ul li {
-        font-size: 16px;
-        color: var(--bark);
-        padding: 8px 0 8px 20px;
-        border-bottom: 1px solid var(--border);
-        position: relative;
-        line-height: 1.6;
-      }
-      .cs-body ul li::before {
-        content: "—";
-        position: absolute;
-        left: 0;
-        color: var(--sand);
-        font-size: 12px;
-        top: 11px;
-      }
-      .cs-body ul li:last-child {
-        border-bottom: none;
-      }
-
       .cs-label {
         display: inline-block;
         font-family: var(--ff-body);
@@ -213,8 +183,6 @@
         color: var(--sand);
         margin-bottom: 8px;
       }
-
-      /* Before/after redesign comparison */
       .before-after {
         margin: 40px 0;
         border: 1px solid var(--border);
@@ -256,7 +224,6 @@
         filter: grayscale(30%);
         opacity: 0.85;
       }
-
       .chart-wrapper {
         background: var(--white);
         border: 1px solid var(--border);
@@ -292,21 +259,11 @@
         border-radius: 50%;
         flex-shrink: 0;
       }
-
-      /* AI callout */
       .ai-callout {
         background: var(--ink);
         border-radius: 8px;
         padding: 24px 28px;
         margin: 32px 0;
-        display: flex;
-        gap: 16px;
-        align-items: flex-start;
-      }
-      .ai-callout__icon {
-        font-size: 22px;
-        flex-shrink: 0;
-        margin-top: 2px;
       }
       .ai-callout__text {
         font-size: 15px;
@@ -317,19 +274,6 @@
       .ai-callout__text strong {
         color: var(--sand);
       }
-
-      .cs-callout {
-        background: var(--linen);
-        border-left: 3px solid var(--sand);
-        border-radius: 0 8px 8px 0;
-        padding: 20px 24px;
-        margin: 32px 0;
-        font-size: 16px;
-        color: var(--bark);
-        font-style: italic;
-        line-height: 1.7;
-      }
-
       .comparison-table {
         width: 100%;
         border-collapse: collapse;
@@ -360,14 +304,10 @@
         font-weight: 600;
         color: var(--ink);
       }
-      .val-before {
-        color: #991b1b;
-      }
       .val-after {
         color: #16a34a;
         font-weight: 700;
       }
-
       .cs-nav {
         display: flex;
         justify-content: space-between;
@@ -386,7 +326,6 @@
       .cs-nav a:hover {
         color: var(--sand);
       }
-
       @media (max-width: 768px) {
         .cs-results__inner {
           grid-template-columns: repeat(2, 1fr);
@@ -415,6 +354,9 @@
           border-right: none;
           border-bottom: 1px solid var(--border);
         }
+        .cuda-blog-grid {
+          grid-template-columns: 1fr !important;
+        }
       }
     </style>
   </head>
@@ -436,14 +378,13 @@
       </button>
     </nav>
     <div class="nav__drawer" role="dialog" aria-label="Navigation menu">
-      <button class="close-btn" aria-label="Close navigation">✕</button>
+      <button class="close-btn" aria-label="Close navigation">x</button>
       <a href="work.html">Work</a>
       <a href="services.html">Services</a>
       <a href="about.html">About</a>
       <a href="contact.html">Let's Talk</a>
     </div>
 
-    <!-- Header -->
     <header class="cs-header">
       <div class="cs-header__inner">
         <a
@@ -456,7 +397,7 @@
             gap: 6px;
             margin-bottom: 20px;
           "
-          >← Work</a
+          >Back to Work</a
         >
         <div
           style="display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 20px"
@@ -500,7 +441,6 @@
       </div>
     </header>
 
-    <!-- Results Strip -->
     <div class="cs-results">
       <div class="cs-results__inner">
         <div class="cs-result">
@@ -526,7 +466,6 @@
       </div>
     </div>
 
-    <!-- Body -->
     <article class="cs-body">
       <span class="cs-label">01 — The Client</span>
       <h2>A mental health practice ready to grow.</h2>
@@ -631,8 +570,7 @@
       <p>
         The data below is from a custom GA4 and Search Console report for May
         2026, one year into the engagement. Organic search is now the dominant
-        traffic channel at 61.57% of all sessions, up from a much smaller share
-        when I started.
+        traffic channel at 61.57% of all sessions.
       </p>
 
       <div class="chart-wrapper reveal">
@@ -640,7 +578,7 @@
         <div class="chart-legend">
           <div class="chart-legend__item">
             <div class="chart-legend__dot" style="background: #c8a97e"></div>
-            <span>2026</span>
+            <span>2025-2026</span>
           </div>
           <div class="chart-legend__item">
             <div
@@ -650,9 +588,13 @@
                 border: 1px dashed #c8a97e;
               "
             ></div>
-            <span>2025 (baseline)</span>
+            <span>2024-2025 (baseline)</span>
           </div>
         </div>
+        <p style="font-size: 13px; color: var(--muted); margin-bottom: 16px">
+          Monthly figures estimated from available data. May 2026 confirmed at
+          479 sessions YoY +125.9%.
+        </p>
         <canvas
           id="sessionsChart"
           height="100"
@@ -694,26 +636,274 @@
       <p>
         Organic search is now the top traffic channel at 61.57% of all sessions.
         The /book page, which is the primary conversion destination, saw 100%
-        MoM session growth in May. The blog is generating traffic with posts
-        like the progressive counting therapy piece driving a 400% MoM increase
-        on that page.
+        MoM session growth in May. The blog is generating traffic with the
+        progressive counting therapy piece driving a 400% MoM increase on that
+        page.
       </p>
       <p>
         This is what sustained SEO work looks like over time. Not a single fix
         but a compounding set of improvements across technical health, content,
         and optimization that builds month over month.
       </p>
+
+      <span class="cs-label">06 — Selected Content</span>
+      <h2>The blog work in practice.</h2>
+      <p>
+        A selection of posts written as part of the ongoing content strategy —
+        each targeting search terms identified in keyword research and
+        structured to support the site's broader topic authority in mental
+        health and therapy services in Central New York.
+      </p>
     </article>
 
+    <section style="background: var(--linen); padding: 60px var(--px)">
+      <div style="max-width: 740px; margin: 0 auto">
+        <div
+          style="
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+          "
+        >
+          <article
+            style="
+              background: var(--white);
+              border: 1px solid var(--border);
+              border-radius: 8px;
+              overflow: hidden;
+              transition:
+                transform 0.22s ease,
+                box-shadow 0.22s ease;
+            "
+            onmouseover="
+              this.style.transform = 'translateY(-4px)';
+              this.style.boxShadow = '0 6px 28px rgba(26,23,20,0.13)';
+            "
+            onmouseout="
+              this.style.transform = 'none';
+              this.style.boxShadow = 'none';
+            "
+          >
+            <div
+              style="
+                aspect-ratio: 16/9;
+                background: var(--linen);
+                overflow: hidden;
+              "
+            >
+              <img
+                src="src/marcel-strauss-fzqxoFJytiE-unsplash.jpg"
+                alt="Mental Health Awareness Month"
+                loading="lazy"
+                style="width: 100%; height: 100%; object-fit: cover"
+              />
+            </div>
+            <div style="padding: 20px 22px 24px">
+              <p
+                style="
+                  font-size: 11px;
+                  font-weight: 700;
+                  letter-spacing: 0.1em;
+                  text-transform: uppercase;
+                  color: var(--sand);
+                  margin-bottom: 6px;
+                "
+              >
+                Mental Health
+              </p>
+              <h3
+                style="
+                  font-family: var(--ff-display);
+                  font-size: 17px;
+                  font-weight: 600;
+                  color: var(--ink);
+                  line-height: 1.3;
+                  margin-bottom: 12px;
+                "
+              >
+                Why Mental Health Awareness Month Matters
+              </h3>
+              <a
+                href="https://www.cudacounseling.org/blog/mental-health-awareness-month"
+                class="content-card__link"
+                target="_blank"
+                rel="noopener noreferrer"
+                style="
+                  font-size: 13px;
+                  font-weight: 500;
+                  color: var(--muted);
+                  display: inline-flex;
+                  align-items: center;
+                  gap: 4px;
+                "
+                >Read Article &#8599;</a
+              >
+            </div>
+          </article>
+
+          <article
+            style="
+              background: var(--white);
+              border: 1px solid var(--border);
+              border-radius: 8px;
+              overflow: hidden;
+              transition:
+                transform 0.22s ease,
+                box-shadow 0.22s ease;
+            "
+            onmouseover="
+              this.style.transform = 'translateY(-4px)';
+              this.style.boxShadow = '0 6px 28px rgba(26,23,20,0.13)';
+            "
+            onmouseout="
+              this.style.transform = 'none';
+              this.style.boxShadow = 'none';
+            "
+          >
+            <div
+              style="
+                aspect-ratio: 16/9;
+                background: var(--linen);
+                overflow: hidden;
+              "
+            >
+              <img
+                src="src/susan-holt-simpson-GQ327RPuxhI-unsplash.jpg"
+                alt="Progressive Counting Therapy"
+                loading="lazy"
+                style="width: 100%; height: 100%; object-fit: cover"
+              />
+            </div>
+            <div style="padding: 20px 22px 24px">
+              <p
+                style="
+                  font-size: 11px;
+                  font-weight: 700;
+                  letter-spacing: 0.1em;
+                  text-transform: uppercase;
+                  color: var(--sand);
+                  margin-bottom: 6px;
+                "
+              >
+                Trauma Therapy
+              </p>
+              <h3
+                style="
+                  font-family: var(--ff-display);
+                  font-size: 17px;
+                  font-weight: 600;
+                  color: var(--ink);
+                  line-height: 1.3;
+                  margin-bottom: 12px;
+                "
+              >
+                Progressive Counting Therapy Explained
+              </h3>
+              <a
+                href="https://www.cudacounseling.org/blog/progressive-counting-therapy"
+                class="content-card__link"
+                target="_blank"
+                rel="noopener noreferrer"
+                style="
+                  font-size: 13px;
+                  font-weight: 500;
+                  color: var(--muted);
+                  display: inline-flex;
+                  align-items: center;
+                  gap: 4px;
+                "
+                >Read Article &#8599;</a
+              >
+            </div>
+          </article>
+
+          <article
+            style="
+              background: var(--white);
+              border: 1px solid var(--border);
+              border-radius: 8px;
+              overflow: hidden;
+              transition:
+                transform 0.22s ease,
+                box-shadow 0.22s ease;
+            "
+            onmouseover="
+              this.style.transform = 'translateY(-4px)';
+              this.style.boxShadow = '0 6px 28px rgba(26,23,20,0.13)';
+            "
+            onmouseout="
+              this.style.transform = 'none';
+              this.style.boxShadow = 'none';
+            "
+          >
+            <div
+              style="
+                aspect-ratio: 16/9;
+                background: var(--linen);
+                overflow: hidden;
+              "
+            >
+              <img
+                src="src/marina-vitale-t809JJ6r9KA-unsplash.jpg"
+                alt="EMDR Trauma Therapy"
+                loading="lazy"
+                style="width: 100%; height: 100%; object-fit: cover"
+              />
+            </div>
+            <div style="padding: 20px 22px 24px">
+              <p
+                style="
+                  font-size: 11px;
+                  font-weight: 700;
+                  letter-spacing: 0.1em;
+                  text-transform: uppercase;
+                  color: var(--sand);
+                  margin-bottom: 6px;
+                "
+              >
+                EMDR
+              </p>
+              <h3
+                style="
+                  font-family: var(--ff-display);
+                  font-size: 17px;
+                  font-weight: 600;
+                  color: var(--ink);
+                  line-height: 1.3;
+                  margin-bottom: 12px;
+                "
+              >
+                EMDR Trauma Therapy in Central NY
+              </h3>
+              <a
+                href="https://www.cudacounseling.org/blog/emdr-trauma-therapy-central-ny"
+                class="content-card__link"
+                target="_blank"
+                rel="noopener noreferrer"
+                style="
+                  font-size: 13px;
+                  font-weight: 500;
+                  color: var(--muted);
+                  display: inline-flex;
+                  align-items: center;
+                  gap: 4px;
+                "
+                >Read Article &#8599;</a
+              >
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
     <div class="cs-nav">
-      <a href="case-study-ucr.html">← Utica Creative Reuse</a>
+      <a href="case-study-ucr.html">Utica Creative Reuse</a>
       <a href="work.html">Back to Work</a>
-      <a href="contact.html">Start a conversation →</a>
+      <a href="contact.html">Start a conversation</a>
     </div>
 
     <section class="cta-band" aria-labelledby="cs-cta-heading">
       <div style="position: relative; z-index: 1">
-        <span class="eyebrow">Work Together</span>
         <h2 id="cs-cta-heading">Ready to grow your organic presence?</h2>
         <p>
           Let's talk about what a focused SEO engagement could look like for
@@ -757,7 +947,7 @@
           ><i class="fa-solid fa-envelope"></i
         ></a>
       </div>
-      <p class="footer__copy">Coded with 🤎 by Olivia Swann © 2026</p>
+      <p class="footer__copy">Coded with by Olivia Swann &copy; 2026</p>
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
@@ -765,13 +955,10 @@
     <script>
       Chart.defaults.font.family = "'DM Sans', system-ui, sans-serif";
       Chart.defaults.color = "#7A6E68";
-
       const sand = "#C8A97E";
       const sandFade = "rgba(200,169,126,0.25)";
       const ink = "#1A1714";
-      const green = "#16A34A";
 
-      // Sessions MoM growth chart — approximate monthly data based on report trends
       new Chart(document.getElementById("sessionsChart"), {
         type: "line",
         data: {
@@ -842,7 +1029,6 @@
         },
       });
 
-      // Channel mix pie chart — May 2026 data from report
       new Chart(document.getElementById("channelChart"), {
         type: "doughnut",
         data: {
@@ -888,7 +1074,8 @@
               padding: 12,
               cornerRadius: 6,
               callbacks: {
-                label: (ctx) => ` ${ctx.label}: ${ctx.parsed}% of sessions`,
+                label: (ctx) =>
+                  " " + ctx.label + ": " + ctx.parsed + "% of sessions",
               },
             },
           },

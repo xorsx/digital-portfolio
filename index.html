@@ -13,7 +13,6 @@
       gtag("js", new Date());
       gtag("config", "G-M4MW4SM3Q3");
     </script>
-
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>
@@ -39,7 +38,6 @@
       content="https://oliviaswann.com/src/olivia-swann.jpg"
     />
     <meta name="twitter:card" content="summary_large_image" />
-
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -54,7 +52,6 @@
         ]
       }
     </script>
-
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -68,6 +65,13 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="style.css" />
+    <style>
+      @media (max-width: 768px) {
+        .homepage-cases {
+          grid-template-columns: 1fr !important;
+        }
+      }
+    </style>
   </head>
   <body>
     <nav class="nav nav--light" aria-label="Main navigation">
@@ -87,7 +91,7 @@
       </button>
     </nav>
     <div class="nav__drawer" role="dialog" aria-label="Navigation menu">
-      <button class="close-btn" aria-label="Close navigation">✕</button>
+      <button class="close-btn" aria-label="Close navigation">x</button>
       <a href="work.html">Work</a>
       <a href="services.html">Services</a>
       <a href="about.html">About</a>
@@ -184,31 +188,84 @@
             from the ground up.
           </p>
         </div>
-        <div class="work-card reveal" style="max-width: 800px">
-          <div class="work-card__body" style="padding: 40px 44px">
-            <div class="work-card__tags">
-              <span class="tag">Technical SEO</span>
-              <span class="tag">On-Site Optimization</span>
-              <span class="tag">Metrics Tracking</span>
-              <span class="tag">Non-Profit</span>
+        <div
+          class="homepage-cases"
+          style="
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 32px;
+            max-width: 100%;
+          "
+        >
+          <article class="work-card reveal">
+            <div class="work-card__image">
+              <img
+                src="src/ucr_gsc_performance.png"
+                alt="Utica Creative Reuse Center SEO results"
+                loading="lazy"
+              />
             </div>
-            <h3
-              class="work-card__title"
-              style="font-size: 28px; margin-top: 14px"
-            >
-              Utica Creative Reuse Center
-            </h3>
+            <div class="work-card__body">
+              <div class="work-card__tags">
+                <span class="tag">Technical SEO</span>
+                <span class="tag">On-Site Optimization</span>
+                <span class="tag">Non-Profit</span>
+              </div>
+              <h3 class="work-card__title">Utica Creative Reuse Center</h3>
+              <p class="work-card__desc">
+                A Central New York 501(c)3 with no prior SEO infrastructure. No
+                tracking, crawl errors throughout, pages not indexed. I ran the
+                audit, fixed what was blocking them, and built the reporting
+                foundation from scratch.
+              </p>
+              <a href="case-study-ucr.html" class="link-arrow"
+                >Read the Case Study</a
+              >
+            </div>
+          </article>
 
-            <p class="work-card__desc">
-              Crawl errors, unindexed pages, no tracking in place. I ran the
-              audit, fixed what was broken, and built the reporting
-              infrastructure to measure what came next. The full story and data
-              are in the case study.
-            </p>
-            <a href="case-study-ucr.html" class="link-arrow"
-              >Read the Full Case Study</a
-            >
-          </div>
+          <article class="work-card reveal">
+            <div class="work-card__image">
+              <img
+                src="src/cuda-after.png"
+                alt="Cuda Counseling website redesign"
+                loading="lazy"
+              />
+            </div>
+            <div class="work-card__body">
+              <div class="work-card__tags">
+                <span class="tag">Technical SEO</span>
+                <span class="tag">Website Redesign</span>
+                <span class="tag">Content Strategy</span>
+              </div>
+              <h3 class="work-card__title">Cuda Counseling LCSW, PLLC</h3>
+              <p class="work-card__desc">
+                A full engagement for a mental health practice in Central New
+                York. Website redesign, technical SEO, content strategy, and
+                on-site optimization. One year in and the numbers keep moving.
+              </p>
+              <a href="case-study-cuda.html" class="link-arrow"
+                >Read the Case Study</a
+              >
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-band" aria-labelledby="cta-heading">
+      <div style="position: relative; z-index: 1">
+        <h2 id="cta-heading">Ready to grow your organic presence?</h2>
+        <p>
+          Available for select SEO consulting engagements alongside my full-time
+          role. Let's talk about what you're trying to achieve.
+        </p>
+        <div class="cta-band__btns">
+          <a href="contact.html" class="btn btn-primary"
+            >Start a Conversation</a
+          >
+          <a href="work.html" class="btn btn-outline-white">See My Work</a>
         </div>
       </div>
     </section>
@@ -240,9 +297,8 @@
           ><i class="fa-solid fa-envelope"></i
         ></a>
       </div>
-      <p class="footer__copy">© 2026 Olivia Swann · Coded with 🤎</p>
+      <p class="footer__copy">Coded with by Olivia Swann &copy; 2026</p>
     </footer>
-
     <script src="app.js"></script>
   </body>
 </html>
