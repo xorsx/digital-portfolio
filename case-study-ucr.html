@@ -314,6 +314,30 @@
         line-height: 1.7;
       }
 
+      .ai-callout {
+        background: var(--ink);
+        border-radius: 8px;
+        padding: 24px 28px;
+        margin: 32px 0;
+        display: flex;
+        gap: 16px;
+        align-items: flex-start;
+      }
+      .ai-callout__icon {
+        font-size: 22px;
+        flex-shrink: 0;
+        margin-top: 2px;
+      }
+      .ai-callout__text {
+        font-size: 15px;
+        color: #ffffff !important;
+        line-height: 1.7;
+        margin: 0;
+      }
+      .ai-callout__text strong {
+        color: var(--sand);
+      }
+
       /* Navigation between case studies */
       .cs-nav {
         display: flex;
@@ -437,51 +461,44 @@
     <div class="cs-results">
       <div class="cs-results__inner">
         <div class="cs-result">
-          <div class="cs-result__number positive">+235%</div>
-          <div class="cs-result__label">Total Clicks</div>
-          <div class="cs-result__context">675 to 2,260 (YoY)</div>
+          <div class="cs-result__number positive">418</div>
+          <div class="cs-result__label">Clicks — May 2026</div>
+          <div class="cs-result__context">Up 88.3% YoY</div>
         </div>
         <div class="cs-result">
-          <div class="cs-result__number positive">+456%</div>
-          <div class="cs-result__label">Total Impressions</div>
-          <div class="cs-result__context">18,700 to 104,000 (YoY)</div>
+          <div class="cs-result__number positive">31,296</div>
+          <div class="cs-result__label">Impressions — May 2026</div>
+          <div class="cs-result__context">Up 382.7% YoY</div>
         </div>
         <div class="cs-result">
-          <div class="cs-result__number positive">7.7</div>
-          <div class="cs-result__label">Avg. Position</div>
-          <div class="cs-result__context">
-            Down from 25.3. Page 3 to top of page 1.
-          </div>
+          <div class="cs-result__number positive">1,007</div>
+          <div class="cs-result__label">Queries Surfaced For</div>
+          <div class="cs-result__context">Up from near zero</div>
         </div>
         <div class="cs-result">
-          <div class="cs-result__number">5 mo.</div>
-          <div class="cs-result__label">Measurement Window</div>
-          <div class="cs-result__context">Jan 14 – May 14, YoY comparison</div>
+          <div class="cs-result__number positive">6</div>
+          <div class="cs-result__label">AI Referral Sessions</div>
+          <div class="cs-result__context">ChatGPT + Perplexity</div>
         </div>
       </div>
     </div>
 
     <!-- Body -->
     <article class="cs-body">
-      <span class="cs-label">01 — The Challenge</span>
-      <h2>A site Google couldn't find.</h2>
+      <span class="cs-label">01 — The Client</span>
+      <h2>A community resource that needed to be found.</h2>
       <p>
         Utica Creative Reuse Center is a 501(c)3 non-profit arts and crafts
         thrift store in Central New York. They launched in September 2024 as a
         farmers market popup before opening their first brick-and-mortar
         location in June 2025. A genuinely valuable community resource with
-        essentially no organic search presence.
+        essentially no organic search presence when I came in.
       </p>
       <p>
-        When I came in, the site had crawl errors throughout, pages that weren't
-        indexing, no Google Search Console property, no GA4 tracking, and no
-        on-page optimization in place. There was no baseline to work from
-        because there was no measurement at all.
-      </p>
-      <p>
-        The goal was simple: fix what was broken, get the site indexed, optimize
-        what was there, and build the reporting infrastructure to measure what
-        happened next.
+        The site had crawl errors throughout, pages that weren't indexing, no
+        Google Search Console property, no GA4 tracking, and no on-page
+        optimization. There was no baseline to work from because there was no
+        measurement at all.
       </p>
 
       <span class="cs-label">02 — My Approach</span>
@@ -564,94 +581,104 @@
         </tbody>
       </table>
 
-      <div class="cs-callout">
-        Worth noting: the CTR dip from 3.6% to 2.2% is expected. When
-        impressions grow 456%, you start showing up for a much broader range of
-        queries including broader, earlier-funnel searches with naturally lower
-        click rates. The absolute click volume more than tripled. That is the
-        metric that matters.
-      </div>
-
       <span class="cs-label">04 — The Data</span>
-      <h2>GSC performance, year over year.</h2>
+      <h2>May 2026 snapshot.</h2>
       <p>
-        The charts below show the same 5-month window compared year over year.
-        January 14 to May 14, the period after the technical work was complete
-        versus the same period the prior year with no SEO infrastructure in
-        place.
+        The numbers below reflect May 2026, roughly a year after the store
+        opened its first physical location. YoY comparisons are now starting to
+        come in and the picture is clear.
       </p>
 
-      <!-- Chart 1: Clicks + Impressions -->
       <div class="chart-wrapper reveal">
         <p class="chart-wrapper__title">
-          Clicks &amp; Impressions — YoY Comparison
+          GSC Clicks and Impressions — May 2026 vs May 2025
         </p>
         <div class="chart-legend">
           <div class="chart-legend__item">
             <div class="chart-legend__dot" style="background: #c8a97e"></div>
-            <span>2026 (after SEO work)</span>
+            <span>May 2026</span>
           </div>
           <div class="chart-legend__item">
             <div
               class="chart-legend__dot"
               style="
-                background: rgba(200, 169, 126, 0.3);
+                background: rgba(200, 169, 126, 0.35);
                 border: 1px dashed #c8a97e;
               "
             ></div>
-            <span>2025 (baseline)</span>
+            <span>May 2025 (baseline)</span>
           </div>
         </div>
         <canvas
           id="clicksChart"
-          height="100"
-          aria-label="Clicks year over year comparison chart"
+          height="90"
+          aria-label="Clicks and impressions YoY bar chart"
         ></canvas>
       </div>
 
-      <!-- Chart 2: Position improvement -->
       <div class="chart-wrapper reveal">
-        <p class="chart-wrapper__title">Average Position — 25.3 to 7.7</p>
+        <p class="chart-wrapper__title">Traffic by Channel — May 2026</p>
+        <canvas
+          id="channelChart"
+          height="80"
+          aria-label="Traffic channel breakdown"
+        ></canvas>
+      </div>
+
+      <div class="chart-wrapper reveal">
+        <p class="chart-wrapper__title">
+          Top Queries by Impressions — May 2026
+        </p>
         <p style="font-size: 14px; color: var(--muted); margin-bottom: 20px">
-          Note: lower is better. Position 1 is the top result.
+          The site is now surfacing for 1,007 total queries. A selection of the
+          most significant below.
         </p>
         <canvas
-          id="positionChart"
-          height="80"
-          aria-label="Average position improvement chart"
+          id="queriesChart"
+          height="100"
+          aria-label="Top search queries impressions chart"
         ></canvas>
       </div>
 
-      <!-- Chart 3: Key metrics bar -->
-      <div class="chart-wrapper reveal">
-        <p class="chart-wrapper__title">Key Metrics — Before vs After</p>
-        <canvas
-          id="metricsChart"
-          height="90"
-          aria-label="Key metrics comparison bar chart"
-        ></canvas>
+      <div class="ai-callout reveal">
+        <div class="ai-callout__icon">🤖</div>
+        <p class="ai-callout__text">
+          <strong>GEO signal:</strong> In May 2026, Utica Creative Reuse
+          received 6 AI referral sessions — 83.3% from ChatGPT and 16.7% from
+          Perplexity. For a small local non-profit, being surfaced by two major
+          AI platforms is a meaningful early signal. This is something I am
+          actively monitoring and will build on as the GEO landscape continues
+          to develop.
+        </p>
       </div>
 
       <span class="cs-label">05 — Results</span>
       <h2>What the numbers mean.</h2>
       <p>
-        Over this 5-month window year over year, total clicks grew from 675 to
-        2,260 and total impressions went from 18,700 to 104,000. Average
-        position improved from 25.3 to 7.7.
+        In May 2026, the site received 418 clicks and 31,296 impressions in GSC,
+        up 88.3% and 382.7% year over year respectively. It is now surfacing for
+        1,007 queries including competitive local terms like "craft thrift
+        store," "art thrift store," "art classes near me," and "sewing classes
+        near me."
       </p>
       <p>
-        It is worth being honest about context here. During this same period,
-        Utica Creative Reuse also opened their first physical location, received
-        local press coverage, and had an active social media presence. All of
+        Organic search is the top traffic channel at 51.37% of all sessions. The
+        /donate-materials/ and /events/ pages are driving meaningful traffic on
+        their own, which tells me the internal linking and page structure work
+        is doing its job.
+      </p>
+      <p>
+        Worth being honest about context here. During this period, Utica
+        Creative Reuse also opened their first physical location, received local
+        press coverage, and maintained an active social media presence. All of
         those factors contributed to increased brand awareness and search
         demand. SEO did not happen in a vacuum.
       </p>
       <p>
         What I can say with confidence is that the technical foundation made it
-        possible for Google to find, index, and surface the site. Before the
-        work, it was not showing up at all. The infrastructure I built meant
-        that when the store opened and people started searching for them, the
-        site was ready to be found.
+        possible for Google to find, index, and surface the site at all. Before
+        the work, it was not showing up. The infrastructure I built meant that
+        when people started searching for them, the site was ready to be found.
       </p>
     </article>
 
@@ -722,153 +749,24 @@
       const sand = "#C8A97E";
       const sandFade = "rgba(200,169,126,0.25)";
       const ink = "#1A1714";
-      const green = "#16A34A";
-      const greenFade = "rgba(22,163,74,0.15)";
 
-      // Month labels for the 5-month window
-      const months = ["Jan", "Feb", "Mar", "Apr", "May"];
-
-      // ── Chart 1: Clicks YoY ──
+      // ── Chart 1: Clicks & Impressions YoY bar ──
       new Chart(document.getElementById("clicksChart"), {
-        type: "line",
-        data: {
-          labels: months,
-          datasets: [
-            {
-              label: "Clicks 2026",
-              data: [320, 380, 520, 480, 560],
-              borderColor: sand,
-              backgroundColor: sandFade,
-              borderWidth: 2.5,
-              pointRadius: 4,
-              pointBackgroundColor: sand,
-              fill: true,
-              tension: 0.35,
-            },
-            {
-              label: "Clicks 2025",
-              data: [100, 110, 160, 130, 175],
-              borderColor: "rgba(200,169,126,0.45)",
-              backgroundColor: "transparent",
-              borderWidth: 1.5,
-              borderDash: [6, 4],
-              pointRadius: 3,
-              pointBackgroundColor: "rgba(200,169,126,0.45)",
-              fill: false,
-              tension: 0.35,
-            },
-          ],
-        },
-        options: {
-          responsive: true,
-          plugins: {
-            legend: { display: false },
-            tooltip: {
-              backgroundColor: ink,
-              titleColor: "#fff",
-              bodyColor: "rgba(255,255,255,0.7)",
-              padding: 12,
-              cornerRadius: 6,
-            },
-          },
-          scales: {
-            x: {
-              grid: { color: "rgba(0,0,0,0.04)" },
-              border: { display: false },
-            },
-            y: {
-              grid: { color: "rgba(0,0,0,0.04)" },
-              border: { display: false },
-              ticks: { callback: (v) => v.toLocaleString() },
-            },
-          },
-        },
-      });
-
-      // ── Chart 2: Position improvement (lower = better) ──
-      new Chart(document.getElementById("positionChart"), {
-        type: "line",
-        data: {
-          labels: months,
-          datasets: [
-            {
-              label: "Avg. Position 2026",
-              data: [18, 14, 10, 8.5, 7.7],
-              borderColor: green,
-              backgroundColor: greenFade,
-              borderWidth: 2.5,
-              pointRadius: 4,
-              pointBackgroundColor: green,
-              fill: true,
-              tension: 0.35,
-            },
-            {
-              label: "Avg. Position 2025",
-              data: [26, 25.5, 25, 25.8, 24],
-              borderColor: "rgba(122,110,104,0.4)",
-              backgroundColor: "transparent",
-              borderWidth: 1.5,
-              borderDash: [6, 4],
-              pointRadius: 3,
-              fill: false,
-              tension: 0.35,
-            },
-          ],
-        },
-        options: {
-          responsive: true,
-          plugins: {
-            legend: { display: false },
-            tooltip: {
-              backgroundColor: ink,
-              titleColor: "#fff",
-              bodyColor: "rgba(255,255,255,0.7)",
-              padding: 12,
-              cornerRadius: 6,
-              callbacks: {
-                label: (ctx) =>
-                  `Position: ${ctx.parsed.y} ${ctx.parsed.y < 10 ? "✓ Page 1" : ""}`,
-              },
-            },
-          },
-          scales: {
-            x: {
-              grid: { color: "rgba(0,0,0,0.04)" },
-              border: { display: false },
-            },
-            y: {
-              reverse: true,
-              grid: { color: "rgba(0,0,0,0.04)" },
-              border: { display: false },
-              min: 1,
-              max: 30,
-              ticks: {
-                callback: (v) => `#${v}`,
-                stepSize: 5,
-              },
-            },
-          },
-        },
-      });
-
-      // ── Chart 3: Key metrics bar ──
-      new Chart(document.getElementById("metricsChart"), {
         type: "bar",
         data: {
-          labels: ["Total Clicks", "Total Impressions (÷10 for scale)"],
+          labels: ["Clicks", "Impressions (÷100 for scale)"],
           datasets: [
             {
-              label: "Jan–May 2025 (Baseline)",
-              data: [675, 1870],
+              label: "May 2025 (baseline)",
+              data: [222, 81],
               backgroundColor: "rgba(200,169,126,0.25)",
               borderColor: "rgba(200,169,126,0.6)",
               borderWidth: 1.5,
               borderRadius: 4,
             },
             {
-              label: "Jan–May 2026 (After SEO)",
-              data: [2260, 10400],
-              backgroundColor: sandFade,
+              label: "May 2026",
+              data: [418, 313],
               backgroundColor: sand,
               borderColor: sand,
               borderWidth: 0,
@@ -891,15 +789,11 @@
               cornerRadius: 6,
               callbacks: {
                 label: (ctx) => {
-                  const raw =
-                    ctx.datasetIndex === 1
-                      ? ctx.dataIndex === 1
-                        ? "104,000"
-                        : ctx.parsed.y.toLocaleString()
-                      : ctx.dataIndex === 1
-                        ? "18,700"
-                        : ctx.parsed.y.toLocaleString();
-                  return ` ${ctx.dataset.label}: ${raw}`;
+                  if (ctx.dataIndex === 1) {
+                    const real = ctx.datasetIndex === 0 ? "8,081" : "31,296";
+                    return ` ${ctx.dataset.label}: ${real} impressions`;
+                  }
+                  return ` ${ctx.dataset.label}: ${ctx.parsed.y} clicks`;
                 },
               },
             },
@@ -909,7 +803,113 @@
             y: {
               grid: { color: "rgba(0,0,0,0.04)" },
               border: { display: false },
-              ticks: { callback: (v) => v.toLocaleString() },
+            },
+          },
+        },
+      });
+
+      // ── Chart 2: Channel mix — May 2026 GA4 data ──
+      new Chart(document.getElementById("channelChart"), {
+        type: "doughnut",
+        data: {
+          labels: [
+            "Organic Search",
+            "Direct",
+            "Organic Social",
+            "Referral",
+            "Other",
+          ],
+          datasets: [
+            {
+              data: [51.37, 35.21, 11.43, 1.14, 0.85],
+              backgroundColor: [
+                "#C8A97E",
+                "#3D3530",
+                "#7A6E68",
+                "#E8DDD4",
+                "#F5EDE0",
+              ],
+              borderWidth: 0,
+              hoverOffset: 6,
+            },
+          ],
+        },
+        options: {
+          responsive: true,
+          cutout: "65%",
+          plugins: {
+            legend: {
+              position: "right",
+              labels: {
+                padding: 20,
+                usePointStyle: true,
+                pointStyleWidth: 10,
+                font: { size: 13 },
+              },
+            },
+            tooltip: {
+              backgroundColor: ink,
+              titleColor: "#fff",
+              bodyColor: "rgba(255,255,255,0.7)",
+              padding: 12,
+              cornerRadius: 6,
+              callbacks: {
+                label: (ctx) => ` ${ctx.label}: ${ctx.parsed}% of sessions`,
+              },
+            },
+          },
+        },
+      });
+
+      // ── Chart 3: Top queries by impressions — real GSC data ──
+      new Chart(document.getElementById("queriesChart"), {
+        type: "bar",
+        indexAxis: "y",
+        data: {
+          labels: [
+            "utica creative reuse",
+            "creative reuse",
+            "art thrift store",
+            "craft thrift store",
+            "art stores near me",
+            "utica reuse",
+            "arts and crafts thrift store",
+            "sewing classes near me",
+          ],
+          datasets: [
+            {
+              label: "Impressions",
+              data: [217, 87, 27, 44, 17, 55, 27, 8],
+              backgroundColor: sand,
+              borderRadius: 3,
+              borderWidth: 0,
+            },
+          ],
+        },
+        options: {
+          responsive: true,
+          plugins: {
+            legend: { display: false },
+            tooltip: {
+              backgroundColor: ink,
+              titleColor: "#fff",
+              bodyColor: "rgba(255,255,255,0.7)",
+              padding: 12,
+              cornerRadius: 6,
+              callbacks: {
+                label: (ctx) => ` ${ctx.parsed.x} impressions`,
+              },
+            },
+          },
+          scales: {
+            x: {
+              grid: { color: "rgba(0,0,0,0.04)" },
+              border: { display: false },
+            },
+            y: {
+              grid: { display: false },
+              border: { display: false },
+              ticks: { font: { size: 12 } },
             },
           },
         },
