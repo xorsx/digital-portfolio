@@ -183,11 +183,34 @@
         color: var(--sand);
         margin-bottom: 8px;
       }
+
+      /* Breakout: give the before/after images more width than the narrow article column */
       .before-after {
-        margin: 40px 0;
-        border: 1px solid var(--border);
-        border-radius: 12px;
-        overflow: hidden;
+        width: 1100px;
+        max-width: 1100px;
+        margin-left: calc((100% - 1100px) / 2);
+      }
+      @media (max-width: 1160px) {
+        .before-after {
+          width: 100%;
+          max-width: 100%;
+          margin-left: 0;
+        }
+      }
+      #lightbox {
+        display: none;
+        position: fixed;
+        inset: 0;
+        background: rgba(26, 23, 20, 0.9);
+        z-index: 999;
+        align-items: center;
+        justify-content: center;
+        cursor: zoom-out;
+      }
+      #lightbox img {
+        max-width: 92vw;
+        max-height: 92vh;
+        border-radius: 6px;
       }
       .before-after__label {
         display: grid;
@@ -224,6 +247,7 @@
         filter: grayscale(30%);
         opacity: 0.85;
       }
+
       .chart-wrapper {
         background: var(--white);
         border: 1px solid var(--border);
@@ -484,7 +508,7 @@
       </p>
 
       <span class="cs-label">02 — The Work</span>
-      <h2>More than SEO. A full engagement.</h2>
+      <h2>SEO strategy and full website redesign.</h2>
       <p>
         This engagement covers more ground than a typical SEO project. Over the
         past year I have worked across four areas: a full website redesign,
@@ -556,13 +580,21 @@
             src="src/cuda-before.png"
             alt="Cuda Counseling website before redesign"
             loading="lazy"
+            onclick="openLightbox(this.src)"
+            style="cursor: zoom-in"
           />
           <img
             src="src/cuda-after.png"
             alt="Cuda Counseling website after redesign"
             loading="lazy"
+            onclick="openLightbox(this.src)"
+            style="cursor: zoom-in"
           />
         </div>
+      </div>
+
+      <div id="lightbox" onclick="this.style.display = 'none'">
+        <img id="lightbox-img" src="" alt="" />
       </div>
 
       <span class="cs-label">04 — The Data</span>
@@ -609,19 +641,6 @@
           height="80"
           aria-label="Traffic channel breakdown pie chart"
         ></canvas>
-      </div>
-
-      <div class="ai-callout reveal">
-        <p class="ai-callout__text">
-          <strong>GEO signal:</strong> In May 2026, Cuda Counseling received 4
-          sessions from ChatGPT referral traffic across three pages including
-          the homepage, /all-services, and a blog post. This is an early but
-          meaningful signal that the site is being surfaced by AI tools in
-          response to mental health queries. As part of the ongoing engagement,
-          I am actively working to strengthen this visibility through content
-          structure, entity optimization, and monitoring AI referral sources as
-          measurement tools improve.
-        </p>
       </div>
 
       <span class="cs-label">05 — Results</span>
