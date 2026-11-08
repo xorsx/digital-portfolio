@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
  
-Sitemap: https://oliviaswann.com/sitemap.xml
+Sitemap: https://oliviarswann.com/sitemap.xml

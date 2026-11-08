@@ -23,7 +23,7 @@
       name="description"
       content="Get in touch with Olivia Swann for SEO strategy, content, and digital marketing services."
     />
-    <link rel="canonical" href="https://oliviaswann.com/contact.html" />
+    <link rel="canonical" href="https://oliviarswann.com/contact.html" />
 
     <meta property="og:title" content="Contact Olivia Swann" />
     <meta
@@ -31,7 +31,7 @@
       content="Ready to grow your organic presence? Let's start a conversation."
     />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://oliviaswann.com/contact.html" />
+    <meta property="og:url" content="https://oliviarswann.com/contact.html" />
     <meta name="twitter:card" content="summary_large_image" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -125,48 +125,18 @@
               GitHub
             </a>
 
-            <div
-              style="
-                margin-top: 40px;
-                padding: 28px;
-                background: var(--linen);
-                border-radius: 8px;
-                border: 1px solid var(--border);
-              "
-            >
+            <div class="info-box">
              <span class="eyebrow">Free SEO Audit</span>
-              <p
-                style="
-                  color: var(--bark);
-                  font-size: 15px;
-                  margin: 0;
-                  line-height: 1.7;
-                "
-              >
+              <p>
                 New clients get a complimentary SEO and organic performance
                 review. Note what you're working with in your message and I'll
                 include it in my response.
               </p>
             </div>
 
-            <div
-              style="
-                margin-top: 20px;
-                padding: 28px;
-                background: var(--linen);
-                border-radius: 8px;
-                border: 1px solid var(--border);
-              "
-            >
+            <div class="info-box">
               <span class="eyebrow">Non-profits</span>
-              <p
-                style="
-                  color: var(--bark);
-                  font-size: 15px;
-                  margin: 0;
-                  line-height: 1.7;
-                "
-              >
+              <p>
                 I offer pro bono work to non-profits and community organizers on
                 a case-by-case basis. Mention it in your message.
               </p>
@@ -176,7 +146,7 @@
           <!-- Right: form -->
           <div class="reveal">
             <div class="contact-form">
-              <!-- Netlify form — add netlify attribute; hidden input for bot protection -->
+              <!-- Netlify form: add netlify attribute; hidden input for bot protection -->
               <form
                 name="contact"
                 method="POST"
@@ -185,7 +155,7 @@
               >
                 <input type="hidden" name="form-name" value="contact" />
                 <!-- Honeypot -->
-                <div style="display: none">
+                <div class="form-honeypot">
                   <label>Don't fill this out: <input name="bot-field" /></label>
                 </div>
 
@@ -251,11 +221,7 @@
                   ></textarea>
                 </div>
 
-                <button
-                  type="submit"
-                  class="btn btn-primary"
-                  style="width: 100%"
-                >
+                <button class="btn btn-primary btn--full" type="submit">
                   Send Message
                 </button>
                 <div class="form-response"></div>

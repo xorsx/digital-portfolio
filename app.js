@@ -81,7 +81,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
         if (res.ok) {
           response.textContent =
-            "Thanks — I'll be in touch within 1–2 business days.";
+            "Thanks, I'll be in touch within 1–2 business days.";
           response.className = "form-response success";
           response.style.display = "block";
           form.reset();
@@ -97,3 +97,10 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 });
+
+/* Case study image lightbox */
+window.openLightbox = (src) => {
+  const box = document.getElementById("lightbox");
+  document.getElementById("lightbox-img").src = src;
+  box.style.display = "flex";
+};
