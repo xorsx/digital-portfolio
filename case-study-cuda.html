@@ -89,7 +89,7 @@
       <a class="nav__brand" href="index.html">Olivia Swann</a>
       <ul class="nav__links" role="list">
         <li><a href="work.html">Work</a></li>
-        <li><a href="services.html">Services</a></li>
+        <li><a href="services.html">What I Do</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="contact.html" class="btn btn-primary">Let's Talk</a></li>
       </ul>
@@ -104,7 +104,7 @@
     <div class="nav__drawer" role="dialog" aria-label="Navigation menu">
       <button class="close-btn" aria-label="Close navigation">x</button>
       <a href="work.html">Work</a>
-      <a href="services.html">Services</a>
+      <a href="services.html">What I Do</a>
       <a href="about.html">About</a>
       <a href="contact.html">Let's Talk</a>
     </div>
@@ -163,7 +163,7 @@
       </p>
 
       <span class="cs-label">02 / What I Did</span>
-      <h2>Four workstreams, one owner.</h2>
+      <h2>What I did.</h2>
       <table class="comparison-table">
         <thead>
           <tr>
@@ -236,7 +236,7 @@
       <div class="chart-wrapper reveal">
         <p class="chart-wrapper__title">Channel Mix: May 2026</p>
         <canvas
-          id="channelChart"
+          id="cudaChannelChart"
           height="80"
           aria-label="Traffic channel breakdown pie chart"
         ></canvas>
@@ -247,8 +247,8 @@
       </p>
 
       <span class="cs-label">05 / Content</span>
-      <h2>Blog work that targets real demand.</h2>
-      <p>Posts built from keyword research to support local topic authority.</p>
+      <h2>Some of the content.</h2>
+      <p>Each post came out of keyword research for the local market.</p>
     </article>
 
     <section class="cs-samples">
@@ -334,18 +334,16 @@
 
     <section class="cta-band" aria-labelledby="cs-cta-heading">
       <div class="cta-band__inner">
-        <h2 id="cs-cta-heading">Ready to grow your organic presence?</h2>
+        <h2 id="cs-cta-heading">Let's talk about search.</h2>
         <p>
-          Let's talk about what a focused SEO engagement could look like for
-          your organization.
+          If you're thinking about where organic and AI search fit in your
+          business, I'd love to hear about it.
         </p>
         <div class="cta-band__btns">
           <a href="contact.html" class="btn btn-primary"
             >Start a Conversation</a
           >
-          <a href="services.html" class="btn btn-outline-white"
-            >View Services</a
-          >
+          <a href="services.html" class="btn btn-outline-white">What I Do</a>
         </div>
       </div>
     </section>
@@ -354,7 +352,7 @@
       <div class="footer__brand">Olivia Swann</div>
       <nav class="footer__links" aria-label="Footer navigation">
         <a href="work.html">Work</a>
-        <a href="services.html">Services</a>
+        <a href="services.html">What I Do</a>
         <a href="about.html">About</a>
         <a href="contact.html">Contact</a>
       </nav>
@@ -382,65 +380,6 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
     <script src="app.js"></script>
-    <script>
-      Chart.defaults.font.family = "'DM Sans', system-ui, sans-serif";
-      Chart.defaults.color = "#7A6E68";
-      const sand = "#C8A97E";
-      const sandFade = "rgba(200,169,126,0.25)";
-      const ink = "#1A1714";
-
-      new Chart(document.getElementById("channelChart"), {
-        type: "doughnut",
-        data: {
-          labels: [
-            "Organic Search",
-            "Direct",
-            "Referral",
-            "Organic Social",
-            "Other",
-          ],
-          datasets: [
-            {
-              data: [61.57, 33.55, 3.73, 1.03, 0.26],
-              backgroundColor: [
-                "#C8A97E",
-                "#3D3530",
-                "#7A6E68",
-                "#E8DDD4",
-                "#F5EDE0",
-              ],
-              borderWidth: 0,
-              hoverOffset: 6,
-            },
-          ],
-        },
-        options: {
-          responsive: true,
-          cutout: "65%",
-          plugins: {
-            legend: {
-              position: "right",
-              labels: {
-                padding: 20,
-                usePointStyle: true,
-                pointStyleWidth: 10,
-                font: { size: 13 },
-              },
-            },
-            tooltip: {
-              backgroundColor: ink,
-              titleColor: "#fff",
-              bodyColor: "rgba(255,255,255,0.7)",
-              padding: 12,
-              cornerRadius: 6,
-              callbacks: {
-                label: (ctx) =>
-                  " " + ctx.label + ": " + ctx.parsed + "% of sessions",
-              },
-            },
-          },
-        },
-      });
-    </script>
+    <script src="charts.js"></script>
   </body>
 </html>

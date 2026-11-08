@@ -1,6 +1,3 @@
-/* ── Google Fonts import ── */
-@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=DM+Sans:wght@300;400;500;700&display=swap");
-
 /* ── Design Tokens ── */
 :root {
   --ink: #1a1714;
@@ -382,7 +379,8 @@ p:last-child {
 }
 
 /* ── Work Cards ── */
-.work-card {
+.work-card,
+.content-card {
   background: var(--white);
   border: 1px solid var(--border);
   border-radius: 8px;
@@ -391,16 +389,19 @@ p:last-child {
     transform var(--transition),
     box-shadow var(--transition);
 }
-.work-card:hover {
+.work-card:hover,
+.content-card:hover {
   transform: translateY(-4px);
   box-shadow: var(--shadow-md);
 }
-.work-card__image {
+.work-card__image,
+.content-card__image {
   aspect-ratio: 16/9;
   overflow: hidden;
   background: var(--linen);
 }
-.work-card__image img {
+.work-card__image img,
+.content-card__image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -713,30 +714,6 @@ p:last-child {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 24px;
-}
-.content-card {
-  background: var(--white);
-  border: 1px solid var(--border);
-  border-radius: 8px;
-  overflow: hidden;
-  transition:
-    transform var(--transition),
-    box-shadow var(--transition);
-}
-.content-card:hover {
-  transform: translateY(-4px);
-  box-shadow: var(--shadow-md);
-}
-.content-card__image {
-  aspect-ratio: 16/9;
-  overflow: hidden;
-  background: var(--linen);
-}
-.content-card__image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform 0.4s ease;
 }
 .content-card:hover .content-card__image img {
   transform: scale(1.04);
@@ -1075,6 +1052,14 @@ p:last-child {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 32px;
+}
+.feature-grid--three {
+  grid-template-columns: repeat(3, 1fr);
+}
+@media (max-width: 1024px) {
+  .feature-grid--three {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 .feature-grid--spaced {
   margin-bottom: 80px;
