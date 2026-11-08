@@ -1260,6 +1260,15 @@ body:has(.cs-header, .page-header) .nav:not(.scrolled) .nav__toggle span {
   color: var(--bark);
   margin-bottom: 18px;
 }
+.cs-body .cs-label {
+  margin-top: 48px;
+}
+.cs-body .cs-label:first-child {
+  margin-top: 0;
+}
+.cs-body .cs-label + h2 {
+  margin-top: 0;
+}
 .cs-label {
   display: inline-block;
   font-family: var(--ff-body);
