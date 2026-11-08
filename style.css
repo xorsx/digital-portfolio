@@ -1489,3 +1489,39 @@ body:has(.cs-header, .page-header) .nav:not(.scrolled) .nav__toggle span {
     border-bottom: none;
   }
 }
+/* ── Articles ── */
+.article-meta {
+  font-size: 14px !important;
+  color: var(--muted) !important;
+  margin-bottom: 32px !important;
+}
+.cs-body p a {
+  color: var(--ink);
+  border-bottom: 1px solid var(--sand);
+}
+.article-list {
+  margin: 0 0 18px 22px;
+  list-style: decimal;
+}
+.article-list--plain {
+  list-style: disc;
+}
+.article-list li {
+  font-size: 17px;
+  line-height: 1.7;
+  color: var(--bark);
+  margin-bottom: 10px;
+}
+.article-code {
+  background: var(--ink);
+  color: var(--linen);
+  padding: 20px 24px;
+  border-radius: 8px;
+  margin: 0 0 24px;
+  font-size: 14px;
+  line-height: 1.7;
+  white-space: pre-wrap;
+}
+.cs-body .article-meta ~ h2:first-of-type {
+  margin-top: 48px;
+}
